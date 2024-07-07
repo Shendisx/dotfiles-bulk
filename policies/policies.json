@@ -1,0 +1,14 @@
+{
+ "policies": {
+    "CaptivePortal": false,
+    "DisableFirefoxAccounts": true,
+    "DisableFirefoxScreenshots": true,
+    "DisableFirefoxStudies": true,
+    "DisableTelemetry": true,
+    "DisableAccounts": true,
+    "OfferToSaveLogins": false,
+    "PrintingEnabled": false,
+    "AutofillAddressEnabled": false,
+    "AutofillCreditCardEnabled": false
+    }
+}

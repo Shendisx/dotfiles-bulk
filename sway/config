@@ -70,7 +70,7 @@ input "1183:14:Chicony_Compaq_Internet_Keyboard" {
     bindsym $mod+q kill
 
     # Start your launcher
-    bindsym Mod1+space exec rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi
+    bindsym $mod+space exec rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -142,24 +142,27 @@ input "1183:14:Chicony_Compaq_Internet_Keyboard" {
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
     bindsym $mod+b splith
-    bindsym $mod+v splitv
+    #Vbindsym $mod+v splitv
 
     # Switch the current container between different layout styles
-    bindsym $mod+s layout stacking
+    #bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    #bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+v floating toggle
 
     # Swap focus between the tiling area and the floating area
-    bindsym $mod+space focus mode_toggle
+    #bindsym $mod+v focus mode_toggle
 
     # Move focus to the parent container
     bindsym $mod+a focus parent
+
+    # Stick window
+    bindsym $mod+s sticky toggle
 #
 # Scratchpad:
 #
@@ -201,26 +204,28 @@ bindsym $mod+r mode "resize"
 
 bindsym Print exec "flameshot gui"
 
+# Thunar
+bindsym $mod+e exec thunar
+
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+    font pango:DejaVu Sans Mono, FontAwesome 12
     position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-
+    status_command /usr/bin/i3status-rs /home/array/.config/i3status-rust/config.toml
     colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        separator #666666
+        background #222222
+        statusline #dddddd
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
     }
 }
 # Autostart
-#exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
-exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP DISPLAY SWAYSOCK
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 include /etc/sway/config.d/*

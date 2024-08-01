@@ -115,7 +115,7 @@ keys = [
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "Space", lazy.spawn("rofi -show drun -theme /home/array/.config/rofi/launchers/type-1/style-1.rasi"), desc="Spawn a command using a prompt widget"),
+    Key([mod], "Space", lazy.spawn("rofi -theme rounded-green-dark -show drun"), desc="Spawn a command using a prompt widget"),
     Key([mod], "s",toggle_sticky_windows(), desc="Toggle state of sticky for current window"),
 
 
@@ -307,7 +307,7 @@ screens = [
 
                 widget.WindowName(
                     background = '#046F5F',
-                    format = "{name}",
+                    #format = "{name}",
                     font = 'IBM Plex Mono Medium',
                     fontsize = 14,
                     empty_group_string = 'Desktop',
@@ -325,7 +325,7 @@ screens = [
 
                 widget.CPU(
                     font = "IBM Plex Mono Medium",
-                    format='CPU:({load_percent:.1f}%/{freq_current}GHz)',
+                    format='CPU:({load_percent:.0f}%|{freq_current}GHz)',
                     fontsize = 15,
                     margin = 0,
                     padding = 0,
@@ -363,7 +363,7 @@ screens = [
                 ),
 
                 widget.Memory(
-                    format = 'RAM:({MemUsed:.0f}MB/{MemTotal:.0f}MB)',
+                    format = 'RAM:({MemUsed:.0f}MB|{MemTotal:.0f}MB)',
                     font = "IBM Plex Mono Medium",
                     fontsize = 15,
                     padding = 0,

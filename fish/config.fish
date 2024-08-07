@@ -10,6 +10,7 @@ alias 900pw='wlr-randr --output HDMI-A-1 --mode 1440x900@74.984001'
 alias exitwm='pkill -U $USER'
 alias audio='systemctl --user restart pipewire pipewire-pulse wireplumber'
 alias setpath='set -x PATH $PWD $PATH'
+alias plasmaservices='kcmshell6 kcm_kded'
 set -U EDITOR subl
 set -U BROWSER firefox
 

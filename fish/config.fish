@@ -1,5 +1,9 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
-set -U _JAVA_AWT_WM_NONREPARENTING 1
+set -gx _JAVA_AWT_WM_NONREPARENTING 1
+#set -gx SDL_VIDEODRIVER wayland
+#set -gx QT_QPA_PLATFORM wayland
+#set -gx XDG_CURRENT_DESKTOP sway
+#set -gx XDG_CURRENT_DESKTOP sway
 alias cat='bat'
 alias hdmi='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
 alias tearingoff='xrandr --output HDMI-A-0 --set TearFree off'

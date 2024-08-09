@@ -19,7 +19,7 @@
         //"custom/rofi",
         "hyprland/workspaces",
         //"hyprland/submap",
-        "temperature",
+        //"temperature",
         //"idle_inhibitor",
         //"mpd"
         "custom/media"
@@ -30,14 +30,14 @@
         //"custom/gammastep",
     ],
     "modules-right": [
-        "backlight",
+        //"backlight",
         "custom/storage",
         "memory",
         "cpu",
-        "battery",
+        //"battery",
         //"pulseaudio",
         "wireplumber",
-        "custom/screenshot_t",
+        //"custom/screenshot_t",
         "custom/power",
         "tray"
     ],
@@ -101,7 +101,7 @@
     },
 
     "memory": {
-        "interval": 30,
+        "interval": 10,
         "format": "  {used:0.2f} / {total:0.0f} GB",
         "on-click": "foot -e btop"
     },

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Vesktop
+GenericName=Internet Messenger
+Comment=Custom Discord desktop app with Vencord preinstalled
+Type=Application
+Exec=vesktop --disable-gpu
+Icon=vesktop
+Categories=Network;InstantMessaging;
+StartupWMClass=Vesktop;
+Keywords=discord;vencord;vesktop

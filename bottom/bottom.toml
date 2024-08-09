@@ -19,7 +19,7 @@
 # Whether to set CPU% on a process to be based on the total CPU or per-core CPU% (not divided by the number of cpus).
 #unnormalized_cpu = false
 # Whether to group processes with the same name together by default.
-group_processes = true
+#group_processes = false
 # Whether to make process searching case sensitive by default.
 #case_sensitive = false
 # Whether to make process searching look for matching the entire word by default.
@@ -55,7 +55,7 @@ group_processes = true
 # Disable mouse clicks
 #disable_click = false
 # Show memory values in the processes widget as values by default
-process_memory_as_value = true
+#process_memory_as_value = false
 # Show tree mode by default in the processes widget.
 #tree = false
 # Shows an indicator in table widgets tracking where in the list you are.

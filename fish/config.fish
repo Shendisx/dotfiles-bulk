@@ -15,6 +15,8 @@ alias exitwm='pkill -U $USER'
 alias audio='systemctl --user restart pipewire pipewire-pulse wireplumber'
 alias setpath='set -x PATH $PWD $PATH'
 alias plasmaservices='kcmshell6 kcm_kded'
+alias mouseaccel='xinput set-prop "11" "libinput Accel Profile Enabled" 0 1 0'
+alias startplasma='/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland'
 set -U EDITOR subl
 set -U BROWSER firefox
 

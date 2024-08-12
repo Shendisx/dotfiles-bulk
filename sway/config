@@ -205,10 +205,15 @@ bindsym $mod+r mode "resize"
 
 # Flameshot
 
-bindsym Print exec "flameshot gui | wl-copy"
+bindsym Print exec grim -g "$(slurp -o -r -c '#ff0000ff')" - | satty --filename - --fullscreen --output-filename ~/Pictures/Screenshots/satty-$(date '+%Y%m%d-%H:%M:%S').png
 
 # Thunar
 bindsym $mod+e exec thunar
+
+# Swappy
+
+bindsym $mod+Shift+p exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)" - | swappy -f -
+bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
 #
 # Status Bar:
@@ -234,6 +239,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec jamesdsp -t -s
+exec mako
 include /etc/sway/config.d/*
 smart_gaps on
 smart_borders on

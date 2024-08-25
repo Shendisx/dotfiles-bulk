@@ -9,6 +9,7 @@ alias hdmi='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
 alias tearingoff='xrandr --output HDMI-A-0 --set TearFree off'
 alias tearingon='xrandr --output HDMI-A-0 --set TearFree on'
 alias 1080p='xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60'
+alias 900p='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
 alias 1080pw='wlr-randr --output HDMI-A-1 --mode 1920x1080@60'
 alias 900pw='wlr-randr --output HDMI-A-1 --mode 1440x900@74.984001'
 alias exitwm='pkill -U $USER'
@@ -17,8 +18,10 @@ alias setpath='set -x PATH $PWD $PATH'
 alias plasmaservices='kcmshell6 kcm_kded'
 alias mouseaccel='xinput set-prop "11" "libinput Accel Profile Enabled" 0 1 0'
 alias startplasma='/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland'
+alias kill='pkill'
+alias monitor='xset s off && xset -dpms'
 set -U EDITOR subl
-set -U BROWSER firefox
+set -U BROWSER brave-browser-beta
 
 
 # overwrite greeting

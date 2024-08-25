@@ -1,0 +1,125 @@
+# Maintainer: mcol <mcol@posteo.net>
+# Contributor: roger <roger@rogerpc.com.ar>
+
+# This PKGBUILD packages Qtile with X11 dependencies.
+
+pkgname=qtile-git
+pkgver=0.28.1.r0.gf1ed49bc
+pkgrel=1
+pkgdesc="A full-featured, pure-Python tiling window manager - X11. (git version)"
+arch=('x86_64')
+url="http://www.qtile.org"
+license=('MIT')
+
+depends=(
+  gdk-pixbuf2
+  glibc
+  libnotify
+  librsvg
+  pango
+  python
+  python-cairocffi
+  python-cffi
+  python-gobject
+  python-xcffib
+)
+makedepends=(
+  git
+  libpulse
+  python-build
+  python-installer
+  python-pywlroots
+  python-setuptools-scm
+  python-wheel
+  wlroots
+)
+checkdepends=(
+  graphviz
+  gtk3
+  imagemagick
+  lm_sensors
+  procps-ng
+  python-bowler
+  python-dbus-next
+  python-gobject
+  python-isort
+  python-libcst
+  python-pytest
+  python-xdg
+  xorg-server-xephyr
+  xorg-server-xvfb
+  xorg-xrandr
+  xorg-xwayland
+)
+optdepends=(
+  'alsa-utils: for volume widget'
+  'canto-daemon: for canto widget'
+  'cmus: for cmus widget'
+  'jupyter_console: for interaction with qtile via Jupyter'
+  'khal: for khal_calendar widget'
+  'libinput: for Wayland backend'
+  'libpulse: for pulse_volume and pulseaudio_ffi widget'
+  'lm_sensors: for sensors widget'
+  'moc: for moc widget'
+  'python-bowler: for migrating configuration files'
+  'python-dbus-next: for utils, notifications and several widgets'
+  'python-iwlib: for wlan widget'
+  'python-keyring: for imapwidget widget'
+  'python-libcst: for migrations'
+  'python-mpd2: mpd2widget widget'
+  'python-psutil: graph, net and memory widget'
+  'python-pywayland: for Wayland backend'
+  'python-pywlroots: for Wayland backend'
+  'python-setproctitle: change process name to qtile'
+  'python-xdg: launchbar widget'
+  'python-xkbcommon: for Wayland backend'
+  'xorg-xwayland: for XWayland support'
+)
+provides=('qtile')
+conflicts=('qtile')
+install=${pkgname}.install
+source=('git+https://github.com/qtile/qtile')
+md5sums=('SKIP')
+
+
+
+pkgver() {
+  cd qtile
+  git describe --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g;s/^v//'
+}
+
+build() {
+  cd qtile
+  export CFLAGS="$CFLAGS -I/usr/include/wlroots0.17"
+  export LDFLAGS="$LDFLAGS -L/usr/lib/wlroots0.17"
+  PYTHONPATH="$PWD" ./scripts/ffibuild -v
+  python -m build --wheel --no-isolation
+}
+
+check() {
+  cd qtile
+  # export LC_TYPE=en_US.UTF-8
+  # export MYPYPATH="$PWD:$PWD/stubs"
+  # mypy-based tests are ignored until I figure out how to fix them
+  # Plus they won't change from merge to package
+  #pytest -vv --backend x11 --ignore test/test_check.py --ignore test/test_migrate.py test
+}
+
+package() {
+  depends+=(
+    wlroots libwlroots.so
+  )
+  cd qtile
+  python -m installer --destdir="$pkgdir" dist/*.whl
+  # license
+  install -vDm 644 LICENSE -t "$pkgdir/usr/share/licenses/$pkgname/"
+  # config
+  install -vDm 644 libqtile/resources/default_config.py -t "$pkgdir/usr/share/doc/qtile/"
+  # desktop files
+  install -vDm 644 "resources/qtile.desktop" -t "$pkgdir/usr/share/xsessions/"
+  install -vDm 644 "resources/qtile-wayland.desktop" -t "$pkgdir/usr/share/wayland-sessions/"
+  # udev rules
+  install -vDm 644 resources/99-qtile.rules -t "$pkgdir/usr/lib/udev/rules.d/"
+  # docs
+  install -vDm 644 {CHANGELOG,README.rst} -t "$pkgdir/usr/share/doc/qtile/"
+}

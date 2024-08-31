@@ -20,6 +20,10 @@ alias mouseaccel='xinput set-prop "11" "libinput Accel Profile Enabled" 0 1 0'
 alias startplasma='/usr/lib/plasma-dbus-run-session-if-needed /usr/bin/startplasma-wayland'
 alias kill='pkill'
 alias monitor='xset s off && xset -dpms'
+alias buildscx='cargo build --release --target-dir /tmp/scx'
+alias usb='sudo ~array/./resetusb.sh'
+alias sleepmon='xset dpms force standby'
+alias sleepwayland='~array/turn-off-monitors.sh'
 set -U EDITOR subl
 set -U BROWSER brave-browser-beta
 

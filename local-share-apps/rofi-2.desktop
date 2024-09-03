@@ -1,7 +1,0 @@
-[Desktop Entry]
-Exec=rofi -theme rounded-green-dark -show drun
-Name=rofi -theme rounded-green-dark -show drun
-NoDisplay=true
-StartupNotify=false
-Type=Application
-X-KDE-GlobalAccel-CommandShortcut=true

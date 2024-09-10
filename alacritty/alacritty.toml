@@ -58,7 +58,7 @@ white   = '#e6f6f6'
 size = 12
 
 [font.normal]
-family = "Hack"
+family = "Monaspace Neon"
 style = "Regular"
 
 [font.bold]

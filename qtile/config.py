@@ -498,11 +498,12 @@ floating_layout = layout.Floating(
         Match(wm_class='notification'),
         Match(wm_class='splash'),
         Match(wm_class='toolbar'),
+        Match(wm_class='ente_auth'),
         Match(title='branchdialog'),
         Match(title='pinentry'),
         Match(title='Steam'),
         Match(title='Steam Settings'),  # GPG key password entry
-        Match(title='Friends List'),  # GPG key password entry
+        Match(title='Friends List'),  # GPG key password entry  # GPG key password entry
     ]
 )
 

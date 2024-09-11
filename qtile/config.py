@@ -164,31 +164,36 @@ for i in groups:
 ###𝙇𝙖𝙮𝙤𝙪𝙩###
 
 layouts = [
-
+    layout.Bsp(
+        border_focus = '#00DC6C',
+        border_normal = '#1F1D2E',
+        margin = 0,
+        border_width = 3,
+    ),
+    layout.MonadThreeCol(
+        border_focus = '#00DC6C',
+        border_normal = '#1F1D2E',
+        margin = 0,
+        border_width = 3,
+    ),
+    layout.MonadWide(
+        border_focus = '#00DC6C',
+        border_normal = '#1F1D2E',
+        margin = 0,
+        border_width = 0,
+    ),
     layout.Columns(
         margin = 0,
         border_focus = '#00DC6C',
         border_normal = '#1F1D2E',
         border_width = 3,
     ),
-
-
-    layout.MonadWide(
-        border_focus = '#00DC6C',
-        border_normal = '#1F1D2E',
-        margin = 0,
-        border_width = 1,
-    ),
-    
-    
-
     layout.Max(
         border_focus = '#00DC6C',
         border_normal = '#1F1D2E',
         margin = 0,
         border_width = 0,
     ),
-
     layout.Floating(
         border_focus = '#00DC6C',
         border_normal = '#1F1D2E',

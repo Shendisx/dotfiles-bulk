@@ -6,7 +6,8 @@ xrandr --output HDMI-A-0 --set TearFree on &
 #picom --daemon --config $HOME/.config/qtile/scripts/picom.conf & 
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/bin/wired &
-#/usr/bin/jamesdsp -s -t &
+/usr/bin/jamesdsp -s -t &
+xset r rate 220 60 &
 eval $(gnome-keyring-daemon --start) &
 #nm-applet &
 

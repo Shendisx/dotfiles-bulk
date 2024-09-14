@@ -69,6 +69,8 @@ def auto_sticky_windows(window):
             and info['name'] == 'Picture-in-Picture'):
         sticky_windows.append(window)
 
+
+
 # █▄▀ █▀▀ █▄█ █▄▄ █ █▄░█ █▀▄ █▀
 # █░█ ██▄ ░█░ █▄█ █ █░▀█ █▄▀ ▄█
 
@@ -128,7 +130,9 @@ keys = [
     Key([], "XF86AudioNext", lazy.spawn("playerctl next"), desc='playerctl'),
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl s 5%+"), desc='brightness UP'),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 5%-"), desc='brightness Down'),
-    Key([], "XF86Tools", lazy.spawn("xset dpms force standby"), desc='Turn off monitor'),
+    Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
+    Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
+    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g schedutil"]), desc='Enable schedutil'),
 
 ##Misc keybinds
     Key([], "Print", lazy.spawn("flameshot gui"), desc='Screenshot'),
@@ -239,6 +243,12 @@ def open_btop():
 
 def open_pavucontrol():
     qtile.spawn("pavucontrol")
+
+def powersave():
+    """Toggle the eww bar."""
+    script = os.path.expanduser('/sbin/powersave.sh')
+    subprocess.call([script])
+    qtile.spawn("xset dpms force standby")
 
 
 # █▄▄ ▄▀█ █▀█

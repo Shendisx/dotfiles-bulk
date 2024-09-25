@@ -133,6 +133,7 @@ keys = [
     Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
     Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
     Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g schedutil"]), desc='Enable schedutil'),
+    Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable schedutil & 3.0Ghz'),
 
 ##Misc keybinds
     Key([], "Print", lazy.spawn("flameshot gui"), desc='Screenshot'),

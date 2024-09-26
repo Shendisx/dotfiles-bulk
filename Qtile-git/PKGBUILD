@@ -4,7 +4,7 @@
 # This PKGBUILD packages Qtile with X11 dependencies.
 
 pkgname=qtile-git
-pkgver=0.28.1.r0.gf1ed49bc
+pkgver=0.28.1.r23.g52d920ad
 pkgrel=1
 pkgdesc="A full-featured, pure-Python tiling window manager - X11. (git version)"
 arch=('x86_64')

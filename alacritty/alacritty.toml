@@ -55,22 +55,22 @@ cyan    = '#1ab2ad'
 white   = '#e6f6f6'
 
 [font]
-size = 12
+size = 15
 
 [font.normal]
-family = "Monaspace Neon"
+family = "Iosevka Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "monospace"
+family = "Iosevka Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "monospace"
+family = "Iosevka Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "monospace"
+family = "Iosevka Nerd Font Mono"
 style = "Bold Italic"
 
 [selection]

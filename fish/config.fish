@@ -4,6 +4,7 @@ set -gx _JAVA_AWT_WM_NONREPARENTING 1
 #set -gx QT_QPA_PLATFORM wayland
 #set -gx XDG_CURRENT_DESKTOP sway
 #set -gx XDG_CURRENT_DESKTOP sway
+set -gx XDG_DATA_DIRS /usr/share:/home/array/.local/share/
 alias cat='bat'
 alias hdmi='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
 alias tearingoff='xrandr --output HDMI-A-0 --set TearFree off'
@@ -24,9 +25,8 @@ alias buildscx='cargo build --release --target-dir /tmp/scx'
 alias usb='sudo ~array/./resetusb.sh'
 alias sleepmon='xset dpms force standby'
 alias sleepwayland='~array/turn-off-monitors.sh'
+alias dns='systemctl restart systemd-resolved && systemctl restart dhcpcd'
 set -U EDITOR subl
-set -U BROWSER brave-browser-beta
-
 
 # overwrite greeting
 # potentially disabling fastfetch

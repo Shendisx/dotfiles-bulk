@@ -132,7 +132,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 5%-"), desc='brightness Down'),
     Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
     Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
-    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g schedutil"]), desc='Enable schedutil'),
+    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g ondemand"]), desc='Enable schedutil'),
     Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable schedutil & 3.0Ghz'),
 
 ##Misc keybinds
@@ -309,8 +309,8 @@ screens = [
 
                 widget.CurrentLayout(
                     background ='#046F5F',
-                    font = 'IBM Plex Mono Medium',
-                    fontsize = 15,
+                    font = 'Noto Sans Medium',
+                    fontsize = 16,
                     padding = 0,
                 ),
 
@@ -325,8 +325,8 @@ screens = [
                 widget.WindowName(
                     background = '#046F5F',
                     #format = "{name}",
-                    font = 'IBM Plex Mono Medium',
-                    fontsize = 14,
+                    font = 'Noto Sans Medium',
+                    fontsize = 16,
                     empty_group_string = 'Desktop',
                     padding = 0,
                 ),
@@ -341,9 +341,9 @@ screens = [
                 ),
 
                 widget.CPU(
-                    font = "IBM Plex Mono Medium",
+                    font = "Noto Sans Medium",
                     format='CPU:({load_percent:.0f}%|{freq_current}GHz)',
-                    fontsize = 15,
+                    fontsize = 16,
                     margin = 0,
                     padding = 0,
                     background = '#046F5F',
@@ -381,8 +381,8 @@ screens = [
 
                 widget.Memory(
                     format = 'RAM:({MemUsed:.0f}MB|{MemTotal:.0f}MB)',
-                    font = "IBM Plex Mono Medium",
-                    fontsize = 15,
+                    font = "Noto Sans Medium",
+                    fontsize = 16,
                     padding = 0,
                     background = '#046F5F',
                     mouse_callbacks = {'Button1': open_btop},
@@ -407,8 +407,8 @@ screens = [
                 ),
 
                 widget.PulseVolume(
-                    font= 'IBM Plex Mono Medium',
-                    fontsize = 15,
+                    font= 'Noto Sans Medium',
+                    fontsize = 16,
                     padding = 0,
                     background = '#046F5F',
                 ),
@@ -438,8 +438,8 @@ screens = [
                 widget.Clock(
                     format = '%d/%m/%y ', #Here you can change between USA or another timezone
                     background = '#046f5f',
-                    font = "IBM Plex Mono Medium",
-                    fontsize = 15,
+                    font = "Noto Sans Medium",
+                    fontsize = 16,
                     padding = 0,
                 ),
 
@@ -454,8 +454,8 @@ screens = [
                 widget.Clock(
                     format = '%H:%M',
                     background = '#046f5f',
-                    font = "IBM Plex Mono Medium",
-                    fontsize = 15,
+                    font = "Noto Sans Medium",
+                    fontsize = 16,
                     padding = 0,
                 ),
 

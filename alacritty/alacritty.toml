@@ -1,166 +1,68 @@
-live_config_reload = true
-working_directory = "None"
+# $HOME/.config/alacritty/alacritty.toml
+# by Rito Ghosh 2023-10-06
 
-[env]
-TERM = "xterm-256color"
-WINIT_X11_SCALE_FACTOR = "1"
+# Alacritty now uses TOML formatting for its config files.
+# This is a simple example.
+
+# There are the specification here: https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd
+# It is not obvious how it translates to TOML. But it is extremely straightforward.
+
+# example: WINDOW, COLORS, etc. are tables, and should be represented as [window], [colors], respectively.
+# specifics of variables go under them. e.g.- look under "dynamic_padding" under-
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#window
+# write `dynamic_padding = true` (without backticks -`) under the table [window]
+# for variables with multiple values, use "dotted keys". Like setting `padding.x = 5` under [window].
+# This is simple. If not clear, do several trials and errors.
+
+# Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
+# I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
+# https://github.com/alacritty/alacritty/tree/master#configuration
 
 [window]
-dynamic_padding = true
-decorations = "full"
-title = "Alacritty@CachyOS"
-opacity = 1
-decorations_theme_variant = "Dark"
 
-[window.dimensions]
-columns = 100
-lines = 30
+opacity = 0.9
 
-[window.class]
-instance = "Alacritty"
-general = "Alacritty"
+padding.x = 10
+padding.y = 10
 
-[scrolling]
-history = 10000
-multiplier = 3
-
-# Marine Dark Theme
-# Source https//github.com/ProDeSquare/alacritty-colorschemes/blob/master/themes/marine_dark.yaml
-
-# Default colors
-[colors.primary]
-background = '#002221'
-foreground = '#e6f8f8'
-
-# Normal colors
-[colors.normal]
-black   = '#002221'
-red     = '#ea3431'
-green   = '#00b6b6'
-yellow  = '#f8b017'
-blue    = '#4894fd'
-magenta = '#e01dca'
-cyan    = '#1ab2ad'
-white   = '#99dddb'
-
-# Bright colors
-[colors.bright]
-black   = '#006562'
-red     = '#ea3431'
-green   = '#00b6b6'
-yellow  = '#f8b017'
-blue    = '#4894fd'
-magenta = '#e01dca'
-cyan    = '#1ab2ad'
-white   = '#e6f6f6'
+decorations = "Full"
+decorations_theme_variant = "Light" # "Dark"
 
 [font]
-size = 15
 
-[font.normal]
-family = "Iosevka Nerd Font Mono"
-style = "Regular"
+#normal.family = "Cascadia Code PL"
+#bold.family = "Cascadia Code PL"
+#italic.family = "Cascadia Code PL"
+#bold_italic.family = "Cascadia Code PL"
 
-[font.bold]
-family = "Iosevka Nerd Font Mono"
-style = "Bold"
+size = 9.0
 
-[font.italic]
-family = "Iosevka Nerd Font Mono"
-style = "Italic"
+# Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
+# Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 
+# small box when a HEX is detected by the editor.
 
-[font.bold_italic]
-family = "Iosevka Nerd Font Mono"
-style = "Bold Italic"
+# Theme
 
-[selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
-save_to_clipboard = true
+[colors.primary]
+foreground = "#ffffff"
+background = "#262335"
 
-[cursor]
-style = "Underline"
-vi_mode_style = "None"
-unfocused_hollow = true
-thickness = 0.15
+[colors.normal]
+black = "#262335"
+red = "#fe4450"
+green = "#72f1b8"
+yellow = "#f3e70f"
+blue = "#03edf9"
+magenta = "#ff7edb"
+cyan = "#03edf9"
+white = "#ffffff"
 
-[mouse]
-hide_when_typing = true
-
-[[mouse.bindings]]
-mouse = "Middle"
-action = "PasteSelection"
-
-[keyboard]
-[[keyboard.bindings]]
-key = "Paste"
-action = "Paste"
-
-[[keyboard.bindings]]
-key = "Copy"
-action = "Copy"
-
-[[keyboard.bindings]]
-key = "L"
-mods = "Control"
-action = "ClearLogNotice"
-
-[[keyboard.bindings]]
-key = "L"
-mods = "Control"
-mode = "~Vi"
-chars = "\f"
-
-[[keyboard.bindings]]
-key = "PageUp"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollPageUp"
-
-[[keyboard.bindings]]
-key = "PageDown"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollPageDown"
-
-[[keyboard.bindings]]
-key = "Home"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollToTop"
-
-[[keyboard.bindings]]
-key = "End"
-mods = "Shift"
-mode = "~Alt"
-action = "ScrollToBottom"
-
-[[keyboard.bindings]]
-key = "V"
-mods = "Control|Shift"
-action = "Paste"
-
-[[keyboard.bindings]]
-key = "C"
-mods = "Control|Shift"
-action = "Copy"
-
-[[keyboard.bindings]]
-key = "F"
-mods = "Control|Shift"
-action = "SearchForward"
-
-[[keyboard.bindings]]
-key = "B"
-mods = "Control|Shift"
-action = "SearchBackward"
-
-[[keyboard.bindings]]
-key = "C"
-mods = "Control|Shift"
-mode = "Vi"
-action = "ClearSelection"
-
-[[keyboard.bindings]]
-key = "Key0"
-mods = "Control"
-action = "ResetFontSize"
+[colors.bright]
+black = "#614d85"
+red = "#fe4450"
+green = "#72f1b8"
+yellow = "#fede5d"
+blue = "#03edf9"
+magenta = "#ff7edb"
+cyan = "#03edf9"
+white = "#ffffff"

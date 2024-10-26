@@ -101,7 +101,7 @@
     },
 
     "memory": {
-        "interval": 10,
+        "interval": 2,
         "format": "  {used:0.2f} / {total:0.0f} GB",
         "on-click": "foot -e btop"
     },
@@ -200,7 +200,7 @@
     },
 
     "clock#date": {
-        "format": "❤️  {:%H:%M   %e %b}", // Icon: calendar-alt
+        "format": "{:%H:%M   %e %b}", // Icon: calendar-alt
         //"format": "{:%I:%M %p  %A %b %d}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>"

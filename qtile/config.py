@@ -515,7 +515,8 @@ floating_layout = layout.Floating(
         Match(title='pinentry'),
         Match(title='Steam'),
         Match(title='Steam Settings'),  # GPG key password entry
-        Match(title='Friends List'),  # GPG key password entry  # GPG key password entry
+        Match(title='Friends List'),
+        Match(title='Alacritty'),  # GPG key password entry  # GPG key password entry
     ]
 )
 

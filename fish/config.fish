@@ -26,6 +26,7 @@ alias usb='sudo ~array/./resetusb.sh'
 alias sleepmon='xset dpms force standby'
 alias sleepwayland='~array/turn-off-monitors.sh'
 alias dns='systemctl restart systemd-resolved && systemctl restart dhcpcd'
+alias checkcpufreq='watch -n.5 "grep \"^[c]pu MHz\" /proc/cpuinfo"'
 set -U EDITOR subl
 
 # overwrite greeting

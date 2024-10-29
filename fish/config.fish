@@ -27,6 +27,8 @@ alias sleepmon='xset dpms force standby'
 alias sleepwayland='~array/turn-off-monitors.sh'
 alias dns='systemctl restart systemd-resolved && systemctl restart dhcpcd'
 alias checkcpufreq='watch -n.5 "grep \"^[c]pu MHz\" /proc/cpuinfo"'
+alias whichpackage='pacman -Qo'
+alias auracheck='aura -Syu && aura -Akaxu'
 set -U EDITOR subl
 
 # overwrite greeting

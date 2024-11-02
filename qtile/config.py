@@ -132,8 +132,8 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 5%-"), desc='brightness Down'),
     Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
     Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
-    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g schedutil"]), desc='Enable schedutil'),
-    Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable schedutil & 3.0Ghz'),
+    Key([], "XF86AudioStop", lazy.spawn("sudo /usr/bin/check_and_set_governor.sh"), desc='Enable ondemand'),
+    Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance'),
 
 ##Misc keybinds
     Key([], "Print", lazy.spawn("flameshot gui"), desc='Screenshot'),
@@ -516,7 +516,7 @@ floating_layout = layout.Floating(
         Match(title='Steam'),
         Match(title='Steam Settings'),  # GPG key password entry
         Match(title='Friends List'),
-        Match(title='Alacritty'),  # GPG key password entry  # GPG key password entry
+        #Match(title='Alacritty'),  # GPG key password entry  # GPG key password entry
     ]
 )
 
@@ -552,4 +552,3 @@ wl_input_rules = None
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
-

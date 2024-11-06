@@ -4,7 +4,7 @@
 # For a full list, see the wiki
 #
 
-monitor=HDMI-A-1,1920x1080@60,0x0,1
+monitor=HDMI-A-1,1920x1080@60,auto,1
 #monitor=HDMI-A-1,1440x900@74.98,auto,1
 # 1920x1080@60
 
@@ -31,7 +31,7 @@ input {
     follow_mouse = 1  
     float_switch_override_focus = 1
     #force_no_accel = true
-    accel_profile = flat
+    accel_profile   = flat
 
     touchpad {
         natural_scroll = no
@@ -52,14 +52,14 @@ general {
 
 decoration {
     active_opacity = 1.0
-    #col.shadow = rgba(1a1a1aee)
-    #col.shadow_inactive=0x33000000
-    #drop_shadow = no
+    col.shadow = rgba(1a1a1aee)
+    col.shadow_inactive=0x33000000
+    drop_shadow = no
     fullscreen_opacity = 1.0
     inactive_opacity = 1.0
     rounding = 0
-    #shadow_range = 100
-    #shadow_render_power = 4
+    shadow_range = 100
+    shadow_render_power = 4
 blur {
     brightness = 0.9
     enabled = false
@@ -151,7 +151,6 @@ debug {
 render {
     explicit_sync = 1
     direct_scanout = false
-    explicit_sync_kms = 2
 }
 
 
@@ -432,7 +431,7 @@ xwayland {
 }
 
 cursor {
-	no_warps = true
+	no_warps = false
 	no_hardware_cursors = 2
-    warp_on_change_workspace = false
+    warp_on_change_workspace = true
 }

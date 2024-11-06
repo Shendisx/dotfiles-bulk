@@ -132,7 +132,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 5%-"), desc='brightness Down'),
     Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
     Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
-    Key([], "XF86AudioStop", lazy.spawn("sudo /usr/bin/check_and_set_governor.sh"), desc='Enable ondemand'),
+    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g schedutil"]), desc='Enable schedutil'),
     Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance'),
 
 ##Misc keybinds

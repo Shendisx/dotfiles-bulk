@@ -1,14 +1,14 @@
 [Unit]
- Description=/etc/rc.local Compatibility
- ConditionPathExists=/etc/rc.local
+Description=/etc/rc.local compatibility
 
 [Service]
- Type=forking
- ExecStart=/etc/rc.local start
- TimeoutSec=0
- StandardOutput=tty
- RemainAfterExit=yes
- SysVStartPriority=99
+Type=oneshot
+ExecStart=/etc/rc.local
+# disable timeout logic
+TimeoutSec=0
+#StandardOutput=tty
+RemainAfterExit=yes
+SysVStartPriority=99
 
 [Install]
- WantedBy=multi-user.target
+WantedBy=multi-user.target

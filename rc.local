@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+echo 500000 | sudo tee /sys/kernel/debug/sched/migration_cost_base_ns
+echo 0 | sudo tee /sys/kernel/debug/sched/migration_cost_step_ns
+
+exit 0

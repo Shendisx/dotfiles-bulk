@@ -1,3 +1,11 @@
+function fzf_file_search
+    set file (find . -type f | fzf --preview 'cat {}')
+    if test -n "$file"
+        $EDITOR "$file"
+    end
+end
+
+
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
 #set -gx SDL_VIDEODRIVER wayland
@@ -29,6 +37,7 @@ alias dns='systemctl restart systemd-resolved && systemctl restart dhcpcd'
 alias checkcpufreq='watch -n.5 "grep \"^[c]pu MHz\" /proc/cpuinfo"'
 alias whichpackage='pacman -Qo'
 alias auracheck='aura -Syu && aura -Akaxu'
+alias ff='fzf_file_search'
 set -U EDITOR subl
 
 # overwrite greeting

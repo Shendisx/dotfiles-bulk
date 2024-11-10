@@ -114,6 +114,7 @@ tunnel4
 tunnel6
 uas
 udp_diag
+udf
 usbhid
 usbnet
 usb_storage

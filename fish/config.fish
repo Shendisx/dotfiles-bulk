@@ -14,11 +14,11 @@ set -gx _JAVA_AWT_WM_NONREPARENTING 1
 #set -gx XDG_CURRENT_DESKTOP sway
 set -gx XDG_DATA_DIRS /usr/share:/home/shendisx/.local/share/
 alias cat='bat'
-alias hdmi='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
-alias tearingoff='xrandr --output HDMI-A-0 --set TearFree off'
-alias tearingon='xrandr --output HDMI-A-0 --set TearFree on'
-alias 1080p='xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60'
-alias 900p='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
+alias hdmi='xrandr --output HDMI-1 --mode 1440x900 --rate 75'
+alias tearingoff='xrandr --output HDMI-1 --set TearFree off'
+alias tearingon='xrandr --output HDMI-1 --set TearFree on'
+alias 1080p='xrandr --output HDMI-1 --mode 1920x1080 --rate 60'
+alias 900p='xrandr --output HDMI-1 --mode 1440x900 --rate 75'
 alias 1080pw='wlr-randr --output HDMI-A-1 --mode 1920x1080@60'
 alias 900pw='wlr-randr --output HDMI-A-1 --mode 1440x900@74.984001'
 alias exitwm='pkill -U $USER'

@@ -1,0 +1,9 @@
+(
+    rules: "",
+    model: "",
+    layout: "latam",
+    variant: "",
+    options: None,
+    repeat_delay: 400,
+    repeat_rate: 15,
+)

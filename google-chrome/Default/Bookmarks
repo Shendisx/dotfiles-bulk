@@ -1,0 +1,358 @@
+{
+   "checksum": "5af6333702a0cbf991667485f48339a7",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13367705348000000",
+            "date_last_used": "13375063004060003",
+            "guid": "83fc5668-8a04-4b6a-93ba-d0bfa8ff3043",
+            "id": "5",
+            "name": "GitHub",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13367705219000000",
+            "date_last_used": "13375198083037666",
+            "guid": "15e20d62-d797-4616-9154-bcad4f4ca091",
+            "id": "6",
+            "name": "Subscriptions - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/feed/subscriptions"
+         }, {
+            "date_added": "13367705283000000",
+            "date_last_used": "13376016612922639",
+            "guid": "c006471e-967c-4c30-8ea7-01cf776e1f05",
+            "id": "7",
+            "name": "Reddit - Dive into anything",
+            "type": "url",
+            "url": "https://www.reddit.com/"
+         }, {
+            "date_added": "13367705342000000",
+            "date_last_used": "13376443282276893",
+            "guid": "9813070e-1359-4df8-9031-786a4834a7ee",
+            "id": "8",
+            "name": "Linux Hardware Reviews & Performance Benchmarks, Open-Source News - Phoronix",
+            "type": "url",
+            "url": "https://www.phoronix.com/"
+         }, {
+            "date_added": "13367700576000000",
+            "date_last_used": "13374982593261049",
+            "guid": "04638ba8-84fd-492a-be39-33e2b1fb6f40",
+            "id": "9",
+            "name": "(1321) Bandeja de entrada | aarrayyzuelo@protonmail.com | Proton Mail",
+            "type": "url",
+            "url": "https://mail.proton.me/u/0/inbox"
+         }, {
+            "date_added": "13367700611000000",
+            "date_last_used": "13374982489649214",
+            "guid": "1cf94ee4-628c-499d-a4e0-2ed707e051e2",
+            "id": "10",
+            "name": "Inbox (716) - lp610mh@gmail.com - Gmail",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/#inbox"
+         }, {
+            "date_added": "13367711489000000",
+            "date_last_used": "13374982489822463",
+            "guid": "d10c668a-aad5-40bd-a848-f17ef618d9e2",
+            "id": "11",
+            "name": "Watchasian | Asian Drama, Movies and Shows EngSub With HD",
+            "type": "url",
+            "url": "https://watchasia.to/"
+         }, {
+            "date_added": "13371445002000000",
+            "date_last_used": "13374982492144003",
+            "guid": "883605bb-5567-46fe-bb3e-732894b25949",
+            "id": "12",
+            "name": "PrimeFlix",
+            "type": "url",
+            "url": "https://primeflix-web.vercel.app/tv/76662/season/1/stream/3"
+         }, {
+            "date_added": "13367705416000000",
+            "date_last_used": "13376016603977332",
+            "guid": "23e9e670-1b23-4083-bd26-ed6692cfe064",
+            "id": "13",
+            "name": "Twitch",
+            "type": "url",
+            "url": "https://www.twitch.tv/"
+         }, {
+            "date_added": "13367711778000000",
+            "date_last_used": "13374982507882892",
+            "guid": "5601cda4-6f8f-4adb-97ab-7da6bc8eec83",
+            "id": "14",
+            "name": "Imgflip - Create and Share Awesome Images",
+            "type": "url",
+            "url": "https://imgflip.com/"
+         }, {
+            "date_added": "13367712343000000",
+            "date_last_used": "13374982509959569",
+            "guid": "3c01ee56-85a9-4644-9d1d-0fb96064bb0e",
+            "id": "15",
+            "name": "sched-ext/scx: sched_ext schedulers and tools",
+            "type": "url",
+            "url": "https://github.com/sched-ext/scx"
+         }, {
+            "date_added": "13367711799000000",
+            "date_last_used": "13376016633700758",
+            "guid": "bfd8b612-a9db-42a1-87f6-15656a603e6b",
+            "id": "16",
+            "name": "Tiempo en Monte Chingolo. Clima a 14 días - Meteored",
+            "type": "url",
+            "url": "https://www.meteored.com.ar/tiempo-en_Monte+Chingolo-America+Sur-Argentina-Provincia+de+Buenos+Aires--1-15405.html"
+         }, {
+            "date_added": "13372693742000000",
+            "date_last_used": "13374982514274292",
+            "guid": "55fc7483-33bf-4d2c-a8cc-1679aa33c32d",
+            "id": "17",
+            "name": "Internet Outages Map | ThousandEyes",
+            "type": "url",
+            "url": "https://www.thousandeyes.com/outages/"
+         }, {
+            "date_added": "13372712735000000",
+            "date_last_used": "0",
+            "guid": "22b03be4-e95d-4bd2-ab79-3e9e91912091",
+            "id": "18",
+            "name": "Fastest DNS Speed Test - Find Optimal DNS Server | No Install",
+            "type": "url",
+            "url": "https://dnsspeedtest.online/"
+         }, {
+            "date_added": "13372714685000000",
+            "date_last_used": "13374982517335131",
+            "guid": "47d869a7-8107-4b6d-a28f-bab8c55c166f",
+            "id": "19",
+            "name": "AdGuard DNS dashboard",
+            "type": "url",
+            "url": "https://adguard-dns.io/en/dashboard/"
+         }, {
+            "date_added": "13372860897000000",
+            "date_last_used": "0",
+            "guid": "ca8fefc1-b112-44da-883c-bb23113ee49f",
+            "id": "20",
+            "name": "Perplexity",
+            "type": "url",
+            "url": "https://www.perplexity.ai/"
+         }, {
+            "date_added": "13372874093000000",
+            "date_last_used": "13374982526362503",
+            "guid": "2f25690d-ad42-45df-95ff-cec9a4200dd1",
+            "id": "21",
+            "name": "AdGuard Home",
+            "type": "url",
+            "url": "http://127.0.0.1/#"
+         }, {
+            "date_added": "13372891431000000",
+            "date_last_used": "0",
+            "guid": "6caeddad-4aef-4c71-824a-385c1c5ca07b",
+            "id": "22",
+            "name": "23 ideas de Cálculos combinados | jerarquia de operaciones, ejercicios matematicos secundaria, lecciones de matemáticas",
+            "type": "url",
+            "url": "https://ar.pinterest.com/acquabags/c%C3%A1lculos-combinados/"
+         }, {
+            "date_added": "13373383927000000",
+            "date_last_used": "0",
+            "guid": "ed1ab199-b069-4759-8b03-8bb7c7fa73d7",
+            "id": "23",
+            "name": "Descuentos, ofertas y cupones de Argentina | Descuentazo",
+            "type": "url",
+            "url": "https://descuentazo.com.ar/"
+         }, {
+            "date_added": "13373733906000000",
+            "date_last_used": "0",
+            "guid": "5fb98fd8-d7ec-44f2-aef9-a0f18d19ffb1",
+            "id": "24",
+            "name": "Impuestito - Calculadora de impuestos para compras y suscripciones en Argentina",
+            "type": "url",
+            "url": "https://www.impuestito.org/"
+         }, {
+            "date_added": "13373733909000000",
+            "date_last_used": "0",
+            "guid": "1a1a2c1d-5d4c-49c3-862d-47e18c14e8c0",
+            "id": "25",
+            "name": "Cuotas e inflación - Infleta",
+            "type": "url",
+            "url": "https://infleta.com.ar/"
+         }, {
+            "date_added": "13374095928000000",
+            "date_last_used": "13374984460429175",
+            "guid": "abcb15f6-d651-40dc-8279-b7bb5a9ebee9",
+            "id": "26",
+            "name": "[R9 390X] Broken hardware acceleration in 6.10 kernel (#3599) · Issues · drm / amd · GitLab",
+            "type": "url",
+            "url": "https://gitlab.freedesktop.org/drm/amd/-/issues/3599"
+         }, {
+            "date_added": "13374119718000000",
+            "date_last_used": "0",
+            "guid": "007bdcbe-3869-4b17-a0e5-772476cff3ed",
+            "id": "27",
+            "name": "List full episode of Lost (2021) | Dramacool",
+            "type": "url",
+            "url": "https://watchasia.to/drama-detail/human-disqualification"
+         }, {
+            "date_added": "13374245077000000",
+            "date_last_used": "0",
+            "guid": "d6101efa-7132-452a-bdf7-e7e956eed5c9",
+            "id": "28",
+            "name": "Zram: RAM 'doubler' on Linux - blog.rymcg.tech",
+            "type": "url",
+            "url": "https://blog.rymcg.tech/blog/linux/zram/"
+         }, {
+            "date_added": "13374246416000000",
+            "date_last_used": "0",
+            "guid": "cb6e61bb-0482-4967-9a77-928197ccaba3",
+            "id": "29",
+            "name": "Compara Rendimientos en Pesos",
+            "type": "url",
+            "url": "https://comparatasas.ar/pesos#remuneradas"
+         }, {
+            "date_added": "13374259141000000",
+            "date_last_used": "0",
+            "guid": "ade9039c-223a-4217-a59f-a30391716399",
+            "id": "30",
+            "name": "Optimizing HTTP/2 prioritization with BBR and tcp_notsent_lowat",
+            "type": "url",
+            "url": "https://blog.cloudflare.com/http-2-prioritization-with-nginx/"
+         }, {
+            "date_added": "13374259144000000",
+            "date_last_used": "0",
+            "guid": "ce31e952-52da-4ca3-89ac-ee22f36272d3",
+            "id": "31",
+            "name": "Tune Linux Kernel TCP/IP Settings",
+            "type": "url",
+            "url": "https://portal.perforce.com/s/article/Tune-Linux-Kernel-TCP-IP-Settings"
+         }, {
+            "date_added": "13374259146000000",
+            "date_last_used": "0",
+            "guid": "82d1c43f-9ba3-4b3c-88ce-d222fefb239b",
+            "id": "32",
+            "name": "Linux Tuning",
+            "type": "url",
+            "url": "https://fasterdata.es.net/host-tuning/linux/"
+         }, {
+            "date_added": "13374259151000000",
+            "date_last_used": "0",
+            "guid": "c6964153-f062-448e-bdb6-6023c14681b3",
+            "id": "33",
+            "name": "Performance Tuning · klzgrad/naiveproxy Wiki",
+            "type": "url",
+            "url": "https://github.com/klzgrad/naiveproxy/wiki/Performance-Tuning"
+         }, {
+            "date_added": "13374288674000000",
+            "date_last_used": "0",
+            "guid": "45293320-10f3-4c87-a796-7e511e447fd0",
+            "id": "34",
+            "name": "MegaEase",
+            "type": "url",
+            "url": "https://megaease.com/docs/easegress/05.administration/5.2.kernel-tuning/"
+         }, {
+            "date_added": "13374336194000000",
+            "date_last_used": "0",
+            "guid": "6a0dab33-33cd-4a16-8996-27592ebe2368",
+            "id": "35",
+            "name": "ubuntu - How to remove Kaccessible in KDE neon / KDE Plasma 5.20? - Unix & Linux Stack Exchange",
+            "type": "url",
+            "url": "https://unix.stackexchange.com/questions/616885/how-to-remove-kaccessible-in-kde-neon-kde-plasma-5-20"
+         }, {
+            "date_added": "13374969503000000",
+            "date_last_used": "0",
+            "guid": "4c649e3e-345f-45da-81b0-ead060d4c543",
+            "id": "36",
+            "name": "50-ejercicios-de-comprension-lectora-.pdf",
+            "type": "url",
+            "url": "https://www.orientacionandujar.es/wp-content/uploads/2017/04/50-ejercicios-de-comprension-lectora-.pdf"
+         }, {
+            "date_added": "13374969505000000",
+            "date_last_used": "0",
+            "guid": "8aec8d74-dbd4-4570-8aea-090deb351d23",
+            "id": "37",
+            "name": "Textos en español: Lecturas con ejercicios de comprensión",
+            "type": "url",
+            "url": "https://lingua.com/es/espanol/lectura/"
+         }, {
+            "date_added": "13374969701000000",
+            "date_last_used": "0",
+            "guid": "63317329-8a38-4ba6-bcc2-017023d559ab",
+            "id": "38",
+            "name": "https://mirrors.edge.kernel.org/pub/tools/llvm/",
+            "type": "url",
+            "url": "https://mirrors.edge.kernel.org/pub/tools/llvm/"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13373052699000000",
+                  "date_last_used": "0",
+                  "guid": "9caa9e72-7557-429a-9bd8-fa36dc5467e4",
+                  "id": "41",
+                  "name": "Get Help",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/products/firefox"
+               }, {
+                  "date_added": "13373052699000000",
+                  "date_last_used": "0",
+                  "guid": "f3c6cec0-26d9-4c7e-a7ce-a5e1d8c0ffb7",
+                  "id": "42",
+                  "name": "Customize Firefox",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+               }, {
+                  "date_added": "13373052699000000",
+                  "date_last_used": "0",
+                  "guid": "c49bc95c-4e43-4c24-95d2-2c24a01fd3fa",
+                  "id": "43",
+                  "name": "Get Involved",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/contribute/"
+               }, {
+                  "date_added": "13373052699000000",
+                  "date_last_used": "0",
+                  "guid": "7b43fcb5-fde0-4611-9ce7-e5e33affd24f",
+                  "id": "44",
+                  "name": "About Us",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/about/"
+               } ],
+               "date_added": "13374982329953094",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "e7a364dc-d80b-4aef-8862-cb9651ec596a",
+               "id": "40",
+               "name": "Mozilla Firefox",
+               "type": "folder"
+            } ],
+            "date_added": "13374982329953055",
+            "date_last_used": "0",
+            "date_modified": "13374982329953055",
+            "guid": "386b8ace-2210-4fa0-b5d4-c61ff42e872c",
+            "id": "39",
+            "name": "Imported From Firefox",
+            "type": "folder"
+         } ],
+         "date_added": "13374982318856559",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13374982318856562",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13374982318856564",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

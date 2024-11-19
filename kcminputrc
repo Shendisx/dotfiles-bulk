@@ -1,0 +1,7 @@
+[Keyboard]
+NumLock=0
+RepeatDelay=200
+RepeatRate=70
+
+[Libinput][9610][39][SINOWEALTH Wired Gaming Mouse]
+PointerAccelerationProfile=1

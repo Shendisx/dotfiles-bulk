@@ -1,0 +1,17 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Dark Castle Color Scheme",
+		"LSP",
+		"LSP-bash",
+		"LSP-cspell",
+		"LSP-marksman",
+		"LSP-pyright",
+		"Package Control",
+		"Theme - Rose Pine",
+	],
+}

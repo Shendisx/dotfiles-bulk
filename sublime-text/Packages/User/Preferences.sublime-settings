@@ -1,0 +1,10 @@
+{
+	"theme": "Rosé Pine.sublime-theme",
+	"color_scheme": "Rosé Pine.sublime-color-scheme",
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"font_size": 12,
+}

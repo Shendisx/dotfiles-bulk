@@ -3,7 +3,7 @@
 # Initialize variables
 total_power=0
 count=0
-duration=60  # Total duration to monitor in seconds
+duration=60 # Total duration to monitor in seconds
 end_time=$((SECONDS + duration))
 
 # Monitoring loop

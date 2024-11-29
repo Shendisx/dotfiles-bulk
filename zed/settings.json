@@ -14,9 +14,17 @@
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font",
   "theme": {
     "mode": "system",
     "light": "Rosé Pine",
-    "dark": "One Dark"
+    "dark": "Atelier Cave Dark",
+    "lsp": {
+      "typos": {
+        "initialization_options": {
+          "diagnosticSeverity": "Hint"
+        }
+      }
+    }
   }
 }

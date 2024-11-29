@@ -1,0 +1,39 @@
+(14:16:37) INFO:    [Legendary]:        Legendary location: /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary
+(14:16:37) INFO:    [Gog]:              GOGDL location: /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl
+(14:16:37) INFO:    [Connection]:       Connectivity: check-online
+(14:16:37) INFO:    [Connection]:       Pinging external endpoints
+(14:16:37) INFO:    [Gog]:              Checking for existing gog manifests
+(14:16:37) WARNING: [Backend]:          Protocol already registered.
+(14:16:37) INFO:    [Legendary]:        Running command: LEGENDARY_CONFIG_PATH=/home/shendisx/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary --version
+(14:16:38) INFO:    [Gog]:              Running command: GOGDL_CONFIG_PATH=/home/shendisx/.config/heroic/gogdlConfig /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/shendisx/.config/heroic/gog_store/auth.json --version
+(14:16:38) INFO:    [Nile]:             Running command: NILE_CONFIG_PATH=/home/shendisx/.config/heroic/nile_config /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile --version
+(14:16:38) INFO:    [Connection]:       Connectivity: online
+(14:16:38) INFO:    [Backend]:          User Not Found, removing it from Store
+(14:16:38) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(14:16:38) INFO:    [Gog]:              Running command: GOGDL_CONFIG_PATH=/home/shendisx/.config/heroic/gogdlConfig /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/shendisx/.config/heroic/gog_store/auth.json auth
+(14:16:38) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(14:16:38) INFO:    [Backend]:          
+System Information:
+CPU: 6x AMD FX(tm)-6300 Six-Core Processor
+Memory: 12.52 GB (used: 10.97 GB)
+GPUs:
+  GPU 0:
+    Name: Advanced Micro Devices, Inc. [AMD/ATI] NITRO Radeon R7 370
+    IDs: D=6811 V=1002 SD=2015 SV=174b
+    Driver: amdgpu
+OS: CachyOS Linux 6.12.0-1-cachyos (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.15.2 Emeth
+  Legendary: 0.20.36 Urban Flight (Heroic)
+  gogdl: 1.1.2
+  comet: comet 0.1.2
+
+  Nile: 1.1.2 Will A. Zeppeli
+
+(14:16:38) INFO:    [Backend]:          Frontend Ready
+(14:16:39) INFO:    [Backend]:          Checking for new Heroic Updates
+(14:16:39) INFO:    [Backend]:          Checking for current version changelog

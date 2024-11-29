@@ -1,0 +1,61 @@
+(10:45:44) INFO:    [Legendary]:        Legendary location: /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary
+(10:45:44) INFO:    [Gog]:              GOGDL location: /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl
+(10:45:44) INFO:    [Connection]:       Connectivity: check-online
+(10:45:44) INFO:    [Connection]:       Pinging external endpoints
+(10:45:44) INFO:    [Gog]:              Checking for existing gog manifests
+(10:45:44) WARNING: [Backend]:          Protocol already registered.
+(10:45:45) INFO:    [Connection]:       Connectivity: online
+(10:45:45) INFO:    [Backend]:          User Not Found, removing it from Store
+(10:45:45) ERROR:   [Gog]:              Unable to syncQueued playtime, userData not present
+(10:45:45) INFO:    [Gog]:              Running command: GOGDL_CONFIG_PATH=/home/shendisx/.config/heroic/gogdlConfig /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/shendisx/.config/heroic/gog_store/auth.json auth
+(10:45:45) INFO:    [Backend]:          AreWeAntiCheatYet data downloaded
+(10:45:45) INFO:    [Backend]:          Frontend Ready
+(10:45:45) INFO:    [Backend]:          Checking for new Heroic Updates
+(10:45:45) INFO:    [Backend]:          Checking for current version changelog
+(10:45:45) INFO:    [Frontend]:         Updated to a new version, cleaaning up the cache.
+(10:45:45) INFO:    [Legendary]:        Running command: LEGENDARY_CONFIG_PATH=/home/shendisx/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary cleanup
+(10:45:45) INFO:    [Frontend]:         Refreshing undefined Library
+(10:45:45) WARNING: [Backend]:          refresh not implemented on Sideload Library Manager
+(10:45:45) INFO:    [Legendary]:        Refreshing library...
+(10:45:46) INFO:    [Legendary]:        Running command: LEGENDARY_CONFIG_PATH=/home/shendisx/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary --version
+(10:45:46) INFO:    [Gog]:              Running command: GOGDL_CONFIG_PATH=/home/shendisx/.config/heroic/gogdlConfig /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/gogdl --auth-config-path /home/shendisx/.config/heroic/gog_store/auth.json --version
+(10:45:46) INFO:    [Nile]:             Running command: NILE_CONFIG_PATH=/home/shendisx/.config/heroic/nile_config /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/nile --version
+(10:45:46) INFO:    [Backend]:          
+System Information:
+CPU: 6x AMD FX(tm)-6300 Six-Core Processor
+Memory: 12.52 GB (used: 3.61 GB)
+GPUs:
+  GPU 0:
+    Name: Advanced Micro Devices, Inc. [AMD/ATI] NITRO Radeon R7 370
+    IDs: D=6811 V=1002 SD=2015 SV=174b
+    Driver: amdgpu
+OS: CachyOS Linux 6.12.1-1-cachyos-tenhz (linux)
+
+The current system is not a Steam Deck
+We are not running inside a Flatpak container
+
+Software Versions:
+  Heroic: 2.15.2 Emeth
+  Legendary: 0.20.36 Urban Flight (Heroic)
+  gogdl: 1.1.2
+  comet: comet 0.1.2
+
+  Nile: 1.1.2 Will A. Zeppeli
+
+(10:45:47) INFO:    [Winetricks]:       Downloading Winetricks
+(10:45:47) INFO:    [DXVKInstaller]:    Updating dxvk to: dxvk-2.5.1
+(10:45:47) INFO:    [DXVKInstaller]:    Updating vkd3d to: vkd3d-proton-2.13
+(10:45:47) INFO:    [DXVKInstaller]:    Updating dxvk-nvapi to: dxvk-nvapi-v0.7.1
+(10:45:49) INFO:    [WineDownloader]:   Updating wine versions info
+(10:45:49) INFO:    [WineDownloader]:   Fetching upstream information...
+(10:45:50) INFO:    [Backend]:          Starting the Download Queue
+(10:45:50) INFO:    [WineDownloader]:   wine versions updated
+(10:45:51) INFO:    [DownloadManager]:  Downloader: Finished downloading https://github.com/Heroic-Games-Launcher/vkd3d-proton/releases/download/v2.13/vkd3d-proton-2.13.tar.xz
+(10:45:51) INFO:    [DXVKInstaller]:    Downloaded vkd3d, extracting...
+(10:45:51) INFO:    [DXVKInstaller]:    vkd3d updated!
+(10:45:51) INFO:    [DownloadManager]:  Downloader: Finished downloading https://github.com/doitsujin/dxvk/releases/download/v2.5.1/dxvk-2.5.1.tar.gz
+(10:45:51) INFO:    [DXVKInstaller]:    Downloaded dxvk, extracting...
+(10:45:51) INFO:    [DXVKInstaller]:    dxvk updated!
+(10:45:51) INFO:    [DownloadManager]:  Downloader: Finished downloading https://github.com/jp7677/dxvk-nvapi/releases/download/v0.7.1/dxvk-nvapi-v0.7.1.tar.gz
+(10:45:51) INFO:    [DXVKInstaller]:    Downloaded dxvk-nvapi, extracting...
+(10:45:51) INFO:    [DXVKInstaller]:    dxvk-nvapi updated!

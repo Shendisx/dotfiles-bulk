@@ -1,0 +1,4 @@
+[11/24/2024, 10:45:45 AM] LEGENDARY_CONFIG_PATH=/home/shendisx/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary cleanup
+[cli] INFO: Cleanup complete! Removed 0.00 MiB.
+[11/24/2024, 10:45:46 AM] LEGENDARY_CONFIG_PATH=/home/shendisx/.config/heroic/legendaryConfig/legendary /opt/heroic/resources/app.asar.unpacked/build/bin/x64/linux/legendary --version
+legendary version "0.20.36", codename "Urban Flight (Heroic)"

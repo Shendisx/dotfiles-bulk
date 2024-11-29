@@ -1,0 +1,18 @@
+{
+	"general-logs": {
+		"currentLogFile": "/home/shendisx/.config/heroic/logs/2024-11-28T17_16_37-heroic.log",
+		"lastLogFile": "/home/shendisx/.config/heroic/logs/2024-11-24T13_45_44-heroic.log",
+		"legendaryLogFile": "/home/shendisx/.config/heroic/logs/2024-11-28T17_16_37-legendary.log",
+		"gogdlLogFile": "/home/shendisx/.config/heroic/logs/2024-11-28T17_16_37-gogdl.log",
+		"nileLogFile": "/home/shendisx/.config/heroic/logs/2024-11-28T17_16_37-nile.log"
+	},
+	"userHome": "/home/shendisx",
+	"language": "en",
+	"window-props": {
+		"x": 0,
+		"y": 0,
+		"width": 1200,
+		"height": 690,
+		"maximized": false
+	}
+}

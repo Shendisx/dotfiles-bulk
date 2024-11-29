@@ -4,5 +4,8 @@ Seen=true
 [Applications][firefox]
 Seen=true
 
+[Applications][org.gnome.Boxes]
+Seen=true
+
 [Applications][org.telegram.desktop]
 Seen=true

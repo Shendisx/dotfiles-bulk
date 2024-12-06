@@ -133,8 +133,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=848,591
-History Items[$e]=file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/Downloads
+DirSelectDialog Size=960,600
+History Items[$e]=file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/wiki,file:$HOME/Downloads
 
 [General]
 ColorSchemeHash=babca25f3a5cf7ece26a85de212ab43d0a141257

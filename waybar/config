@@ -1,0 +1,262 @@
+[
+  {
+    "clock": {
+      "actions": {
+        "on-click-backward": "tz_down",
+        "on-click-forward": "tz_up",
+        "on-click-right": "mode",
+        "on-scroll-down": "shift_down",
+        "on-scroll-up": "shift_up"
+      },
+      "calendar": {
+        "mode": "month",
+        "mode-mon-col": 3,
+        "on-click-right": "mode",
+        "on-scroll": 1,
+        "weeks-pos": "right"
+      },
+      "format": " {:%A, %B %d, %Y (%R)}",
+      "tooltip-format": "<tt><small>{calendar}</small></tt>"
+    },
+    "custom/launcher": {
+      "format": "  SoulHarsh007",
+      "on-click": "nwg-drawer -wm hyprland -nocats -mb 128 -ml 256 -mr 256 -mt 128 -ft",
+      "tooltip": false
+    },
+    "custom/notification": {
+      "escape": true,
+      "exec": "swaync-client -swb",
+      "exec-if": "which swaync-client",
+      "format": "{icon}",
+      "format-icons": {
+        "dnd-inhibited-none": "",
+        "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "dnd-none": "",
+        "dnd-notification": "<span foreground='red'><sup></sup></span>",
+        "inhibited-none": "",
+        "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+        "none": "",
+        "notification": "<span foreground='red'><sup></sup></span>"
+      },
+      "on-click": "sh -c 'sleep 0.1s; swaync-client -t -sw; sleep 0.1s'",
+      "on-click-right": "swaync-client -d -sw",
+      "return-type": "json",
+      "tooltip": false
+    },
+    "custom/power_button": {
+      "format": "",
+      "on-click": "sleep 0.1s && nwg-bar",
+      "tooltip": false
+    },
+    "custom/screenshot": {
+      "format": "",
+      "on-click": "sleep 0.1s && nwg-bar -t bar-screenshot.json",
+      "tooltip": false
+    },
+    "height": 35,
+    "hyprland/window": {
+      "format": "{title}",
+      "max-length": 50,
+      "rewrite": {
+        "": "Empty Workspace"
+      },
+      "separate-outputs": true
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "1": "1",
+        "10": "10",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+      },
+      "on-click": "activate",
+      "on-scroll-down": "hyprctl dispatch workspace e-1",
+      "on-scroll-up": "hyprctl dispatch workspace e+1"
+    },
+    "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+        "activated": "",
+        "deactivated": ""
+      }
+    },
+    "layer": "top",
+    "modules-center": ["hyprland/window"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "mpris"],
+    "modules-right": [
+      "clock",
+      "network",
+      "tray",
+      "custom/notification",
+      "custom/power_button",
+      "custom/screenshot",
+      "idle_inhibitor"
+    ],
+    "mpris": {
+      "dynamic-importance-order": ["title", "artist"],
+      "dynamic-order": ["title", "artist"],
+      "format": "{player_icon} {dynamic}",
+      "format-paused": "{status_icon} {dynamic}",
+      "player-icons": {
+        "default": "▶",
+        "spotify": " "
+      },
+      "status-icons": {
+        "paused": "⏸"
+      }
+    },
+    "network": {
+      "format": "{bandwidthDownBytes} | {bandwidthUpBytes}",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}",
+      "format-disconnected": "Disconnected ⚠",
+      "format-linked": "{ifname} (No IP) ",
+      "format-wifi": "{essid} ({signalStrength}%) ",
+      "interval": 1,
+      "tooltip-format": "{ifname} via {gwaddr} "
+    },
+    "spacing": 4,
+    "tray": {
+      "icon-size": 16,
+      "spacing": 10
+    }
+  },
+  {
+    "cpu": {
+      "format": " {avg_frequency:4}GHz | {usage:2}%",
+      "interval": 1,
+      "tooltip": false
+    },
+    "custom/fan": {
+      "exec": "sensors | grep fan1: | awk '{print $2}'",
+      "format": "󰈐 {}",
+      "interval": 5,
+      "tooltip": false
+    },
+    "disk": {
+      "format": " {free}",
+      "path": "/",
+      "tooltip": true
+    },
+    "disk#backups": {
+      "format": " {free}",
+      "path": "/backups",
+      "tooltip": true
+    },
+    "disk#games": {
+      "format": " {free}",
+      "path": "/games",
+      "tooltip": true
+    },
+    "disk#home": {
+      "format": " {free}",
+      "path": "/home",
+      "tooltip": true
+    },
+    "height": 35,
+    "layer": "top",
+    "memory": {
+      "format": " {percentage}% | {swapPercentage}%",
+      "interval": 3,
+      "tooltip-format": "{used:0.1f}GiB used | {swapUsed:0.1f}GiB used"
+    },
+    "modules-center": ["wlr/taskbar"],
+    "modules-left": ["custom/fan", "temperature", "cpu", "memory", "user"],
+    "modules-right": [
+      "disk",
+      "disk#home",
+      "disk#games",
+      "disk#backups",
+      "pulseaudio",
+      "pulseaudio#mic",
+      "privacy"
+    ],
+    "position": "bottom",
+    "privacy": {
+      "icon-size": 16,
+      "icon-spacing": 4,
+      "modules": [
+        {
+          "tooltip": true,
+          "tooltip-icon-size": 24,
+          "type": "screenshare"
+        },
+        {
+          "tooltip": true,
+          "tooltip-icon-size": 24,
+          "type": "audio-out"
+        },
+        {
+          "tooltip": true,
+          "tooltip-icon-size": 24,
+          "type": "audio-in"
+        }
+      ],
+      "transition-duration": 250
+    },
+    "pulseaudio": {
+      "format": "{icon} {volume}%",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-icons": {
+        "car": "",
+        "default": ["", "", ""],
+        "hands-free": "",
+        "headphone": "",
+        "headset": "",
+        "phone": "",
+        "portable": ""
+      },
+      "format-muted": " {format_source}",
+      "format-source": " {volume}%",
+      "format-source-muted": "",
+      "on-click": "swayosd-client --output-volume mute-toggle",
+      "on-click-right": "pavucontrol",
+      "on-scroll-down": "swayosd-client --output-volume lower",
+      "on-scroll-up": "swayosd-client --output-volume raise"
+    },
+    "pulseaudio#mic": {
+      "format": "{format_source}",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-icons": {
+        "car": "",
+        "default": ["", "", ""],
+        "hands-free": "",
+        "headphone": "",
+        "headset": "",
+        "phone": "",
+        "portable": ""
+      },
+      "format-muted": " {format_source}",
+      "format-source": " {volume}%",
+      "format-source-muted": "",
+      "on-click": "swayosd-client --input-volume mute-toggle",
+      "on-click-right": "pavucontrol",
+      "on-scroll-down": "swayosd-client --input-volume lower",
+      "on-scroll-up": "swayosd-client --input-volume raise"
+    },
+    "spacing": 4,
+    "temperature": {
+      "format": " {temperatureC}°C",
+      "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input"
+    },
+    "user": {
+      "format": " {work_d}d {work_H}h {work_M}m",
+      "interval": 60
+    },
+    "wlr/taskbar": {
+      "active-first": true,
+      "format": "{icon}",
+      "ignore-list": ["Wayland to X Recording bridge — Xwayland Video Bridge"],
+      "on-click": "activate",
+      "on-click-right": "minimize"
+    }
+  }
+]

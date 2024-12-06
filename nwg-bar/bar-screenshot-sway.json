@@ -1,0 +1,22 @@
+[
+  {
+    "label": "_Screen",
+    "exec": "/home/shendisx/.config/nwg-bar/screenshot.sh screen",
+    "icon": "/usr/share/icons/Reversal-blue-dark/devices/symbolic/video-display-symbolic.svg"
+  },
+  {
+    "label": "_Output",
+    "exec": "/home/shendisx/.config/nwg-bar/screenshot.sh anything",
+    "icon": "/usr/share/icons/Reversal-blue-dark/devices/symbolic/video-display-symbolic.svg"
+  },
+  {
+    "label": "_Window",
+    "exec": "/home/shendisx/.config/nwg-bar/screenshot.sh window",
+    "icon": "/usr/share/icons/Reversal-blue-dark/actions@2x/24/window.svg"
+  },
+  {
+    "label": "_Region",
+    "exec": "/home/shendisx/.config/nwg-bar/screenshot.sh area",
+    "icon": "/usr/share/icons/Reversal-blue-dark/actions@2x/24/stock_select-all.svg"
+  }
+]

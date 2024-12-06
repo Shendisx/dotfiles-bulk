@@ -169,8 +169,7 @@ input type:keyboard repeat_rate 50
     # Move focus to the parent container
     bindsym $mod+a focus parent
 
-    # Stick window
-    bindsym $mod+s sticky toggle
+
 #
 # Scratchpad:
 #
@@ -210,15 +209,11 @@ bindsym $mod+r mode "resize"
 
 # Flameshot
 
-bindsym Print exec flameshot gui
+bindsym Print exec grimshot copy area
 
 # Thunar
 bindsym $mod+e exec thunar
 
-# Swappy
-
-bindsym $mod+Shift+p exec grim -g "$(swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | .rect | "\(.x),\(.y) \(.width)x\(.height)"' | slurp)" - | swappy -f -
-bindsym $mod+Shift+s exec grim -g "$(slurp)" - | swappy -f -
 
 # Monitor Scripts
 
@@ -234,25 +229,15 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 # Increase volume
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 
+# Screenshot
+bindsym $mod+s exec --no-startup-id /usr/bin/grimshot --notify copy output
+bindsym $mod+shift+s exec --no-startup-id nwg-bar -t bar-screenshot-sway.json
 
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    font pango:DejaVu Sans Mono, FontAwesome 12
-    position top
-    status_command /usr/bin/i3status-rs /home/shendisx/.config/i3status-rust/config.toml
-    colors {
-        separator #666666
-        background #222222
-        statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
-    }
-}
+
 # Autostart
 exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
 exec systemctl --user import-environment DISPLAY \
@@ -272,6 +257,11 @@ exec mako
 exec corectrl
 exec /usr/bin/swayosd-server & disown
 exec /usr/bin/copyq & disown
+exec_always autotiling -w 1 2 3 4 5 6 7 8 9
+exec /usr/bin/waybar --config ~/.config/waybar/config.sway.jsonc & disown
+
+# Sway variables
+
 include /etc/sway/config.d/*
 smart_gaps on
 smart_borders on
@@ -291,6 +281,7 @@ for_window {
 
   # Enable floating for specific apps
   [title="Application Finder"] floating enable
+  [title="Alacritty"] floating enable
   [app_id="wdisplays"] floating enable
 
   # Set specific window sizes

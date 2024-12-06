@@ -1,0 +1,2 @@
+{AMD/AMD Radeon R7 370 Series (radeonsi, pitcairn, LLVM 18.1.8, DRM 3.59, 6.12.1-1-cachyos-bmq-lto)/4.6 (Core Profile) Mesa 24.2.7-cachyos1.1}=SUPPORTED
+{Advanced Micro Devices/AMD Radeon R7 370 Series (RADV PITCAIRN)/radv Mesa 24.2.7-cachyos1.1}=SUPPORTED

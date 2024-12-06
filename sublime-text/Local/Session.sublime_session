@@ -1,17 +1,54 @@
 {
 	"file_history":
 	[
+		"/home/shendisx/dots/sway/binds",
+		"/home/shendisx/.config/nwg-bar/screenshot.sh",
+		"/home/shendisx/.config/nwg-bar/bar-screenshot.json",
+		"/home/shendisx/.config/nwg-bar/bar-screenshot-sway.json",
+		"/usr/share/cachyos-hyprland-settings/hypr/keybinds.conf",
+		"/home/shendisx/.config/sway/config",
+		"/home/shendisx/.config/pipewire/pipewire-pulse.conf",
+		"/home/shendisx/.config/waybar/waybar.sh",
+		"/usr/share/cachyos-hyprland-settings/hypr/autostart.conf",
+		"/home/shendisx/.config/waybar/config.sway.jsonc",
+		"/home/shendisx/dots/sway/outputs",
+		"/home/shendisx/dots/sway/output",
+		"/home/shendisx/dots/sway/scripts/import-gsettings",
+		"/home/shendisx/dots/waybar/config.sway.jsonc",
+		"/home/shendisx/.config/pipewire/pipewire.conf",
+		"/home/shendisx/cachyos-hyprland-settings/etc/profile.d/Hyprland.sh",
+		"/home/shendisx/cachyos-hyprland-settings/etc/skel/.profile",
 		"/home/shendisx/.config/hypr/hyprland.conf",
+		"/usr/share/cachyos-hyprland-settings/hypr/colors.conf",
+		"/usr/share/cachyos-hyprland-settings/hypr/decorations.conf",
+		"/usr/share/cachyos-hyprland-settings/hypr/variables.conf",
+		"/etc/environment",
+		"/usr/lib/sysctl.d/99-cachyos-settings.conf",
+		"/home/shendisx/dots/sway/autostart",
+		"/home/shendisx/dots/sway/input",
+		"/var/lib/private/adguardhome/AdGuardHome.yaml",
+		"/usr/share/cachyos-hyprland-settings/hypr/defaults.conf",
+		"/etc/security/limits.conf",
+		"/etc/security/limits.d/99-realtime-privileges.conf",
+		"/home/shendisx/.config/qtile/config.py",
+		"/home/shendisx/Downloads/message.txt",
+		"/home/shendisx/Downloads/HFW DiskCache Enabler/REMOVE DIRECT STORAGE!.txt",
+		"/home/shendisx/.config/modprobed.db",
+		"/home/shendisx/.config/sway/scripts/window-opacity.sh",
+		"/etc/pacman.d/mirrorlist",
+		"/home/shendisx/.config/sway/scripts/screentoggle.sh",
+		"/home/shendisx/dotfiles-bulk/hypr/hyprland.conf",
+		"/home/shendisx/dotfiles-bulk/.gitignore",
+		"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+		"/home/shendisx/.config/MangoHud/MangoHud.conf",
+		"/etc/pacman.d/cachyos-mirrorlist",
+		"/home/shendisx/Downloads/Assassins-Creed-Unity-SteamRIP.com/Read_Me_Instructions.txt",
 		"/home/shendisx/wiki/tailwind.config.cjs",
 		"/home/shendisx/.archlinux.draft.txt",
 		"/home/shendisx/wiki/astro.config.mjs",
 		"/home/shendisx/wiki/src/content/docs/configuration/gaming.mdx",
 		"/home/shendisx/Downloads/log4.txt",
-		"/home/shendisx/.config/MangoHud/MangoHud.conf",
-		"/home/shendisx/.config/modprobed.db",
-		"/home/shendisx/dotfiles-bulk/.gitignore",
 		"/usr/lib/firefox/firefox.cfg",
-		"/usr/lib/sysctl.d/99-cachyos-settings.conf",
 		"/home/shendisx/.cache/gnome-boxes/logs/archlinux.logs",
 		"/home/shendisx/wiki/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js",
 		"/home/shendisx/CarX Street_2024-11-25_20-58-00_summary.csv",
@@ -51,7 +88,6 @@
 		"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-151524-204-208.txt",
 		"/home/shendisx/moeuse.sh",
 		"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/Assassin4.ini",
-		"/etc/pacman.d/mirrorlist",
 		"/etc/pacman.conf",
 		"/etc/default/grub",
 		"/home/shendisx/Downloads/bench.sh",
@@ -59,7 +95,6 @@
 		"/home/shendisx/Cyb/Read_Me_Instructions.txt",
 		"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-151410-224-228.txt",
 		"/home/shendisx/Assassins Creed Revelations/dxvk.conf",
-		"/home/shendisx/.config/qtile/config.py",
 		"/home/shendisx/mouse.sh",
 		"/home/shendisx/.config/fish/config.fish",
 		"/home/shendisx/Downloads/picom.conf",
@@ -70,10 +105,8 @@
 		"/home/shendisx/ente-auth-bin/PKGBUILD",
 		"/home/shendisx/.config/alacritty/alacritty.toml",
 		"/home/shendisx/.config/aura/config.toml",
-		"/etc/security/limits.d/99-realtime-privileges.conf",
 		"/usr/lib/modprobe.d/amdgpu.conf",
 		"/usr/share/pipewire/pipewire.conf",
-		"/etc/security/limits.conf",
 		"/home/shendisx/ente-auth-bin/PKGBUILD.rej",
 		"/tmp/tmp.XF7no0tgYE.fish",
 		"/tmp/tmp.RU3XhURP3M.fish",
@@ -95,28 +128,23 @@
 		"/home/shendisx/chromium-clang/PKGBUILD",
 		"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch.patch",
 		"/home/shendisx/kaboomland-log.txt",
-		"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c",
-		"/var/log/pacman.log",
-		"/home/shendisx/.config/kitty/kitty.conf",
-		"/home/shendisx/log.txt",
-		"/usr/lib/cachy-browser/cachyos.cfg",
-		"/usr/share/cachyos-fish-config/cachyos-config.fish",
-		"/usr/lib/firefox/defaults/pref/autoconfig.js",
-		"/home/shendisx/dotfiles-bulk/grub"
+		"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c"
 	],
 	"folder_history":
 	[
+		"/home/shendisx/.config/waybar",
+		"/home/shendisx/.config/sway",
 		"/home/shendisx/wiki"
 	],
 	"last_version": 4180,
-	"last_window_id": 1,
+	"last_window_id": 3,
 	"log_indexing": false,
-	"next_update_check": 1732893563,
+	"next_update_check": 1733571717,
 	"settings":
 	{
 		"new_window_full_screen": false,
-		"new_window_height": 0.0,
-		"new_window_maximized": true,
+		"new_window_height": 1007.0,
+		"new_window_maximized": false,
 		"new_window_position":
 		[
 			0.0,
@@ -185,18 +213,54 @@
 			},
 			"file_history":
 			[
-				"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
-				"/home/shendisx/dotfiles-bulk/.gitignore",
+				"/home/shendisx/dots/waybar/config.sway.jsonc",
+				"/home/shendisx/.config/sway/config",
+				"/usr/share/cachyos-hyprland-settings/hypr/keybinds.conf",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot-sway.json",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot.json",
+				"/home/shendisx/.config/nwg-bar/screenshot.sh",
+				"/home/shendisx/dots/sway/binds",
+				"/home/shendisx/.config/pipewire/pipewire-pulse.conf",
+				"/home/shendisx/.config/waybar/waybar.sh",
+				"/usr/share/cachyos-hyprland-settings/hypr/autostart.conf",
+				"/home/shendisx/.config/waybar/config.sway.jsonc",
+				"/home/shendisx/dots/sway/outputs",
+				"/home/shendisx/dots/sway/output",
+				"/home/shendisx/dots/sway/scripts/import-gsettings",
+				"/home/shendisx/.config/pipewire/pipewire.conf",
+				"/home/shendisx/cachyos-hyprland-settings/etc/profile.d/Hyprland.sh",
+				"/home/shendisx/cachyos-hyprland-settings/etc/skel/.profile",
 				"/home/shendisx/.config/hypr/hyprland.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/colors.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/decorations.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/variables.conf",
+				"/etc/environment",
+				"/usr/lib/sysctl.d/99-cachyos-settings.conf",
+				"/home/shendisx/dots/sway/autostart",
+				"/home/shendisx/dots/sway/input",
+				"/var/lib/private/adguardhome/AdGuardHome.yaml",
+				"/usr/share/cachyos-hyprland-settings/hypr/defaults.conf",
+				"/etc/security/limits.conf",
+				"/etc/security/limits.d/99-realtime-privileges.conf",
+				"/home/shendisx/.config/qtile/config.py",
+				"/home/shendisx/Downloads/message.txt",
+				"/home/shendisx/Downloads/HFW DiskCache Enabler/REMOVE DIRECT STORAGE!.txt",
+				"/home/shendisx/.config/modprobed.db",
+				"/home/shendisx/.config/sway/scripts/window-opacity.sh",
+				"/etc/pacman.d/mirrorlist",
+				"/home/shendisx/.config/sway/scripts/screentoggle.sh",
+				"/home/shendisx/dotfiles-bulk/hypr/hyprland.conf",
+				"/home/shendisx/dotfiles-bulk/.gitignore",
+				"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+				"/home/shendisx/.config/MangoHud/MangoHud.conf",
+				"/etc/pacman.d/cachyos-mirrorlist",
+				"/home/shendisx/Downloads/Assassins-Creed-Unity-SteamRIP.com/Read_Me_Instructions.txt",
 				"/home/shendisx/wiki/tailwind.config.cjs",
 				"/home/shendisx/.archlinux.draft.txt",
 				"/home/shendisx/wiki/astro.config.mjs",
 				"/home/shendisx/wiki/src/content/docs/configuration/gaming.mdx",
 				"/home/shendisx/Downloads/log4.txt",
-				"/home/shendisx/.config/MangoHud/MangoHud.conf",
-				"/home/shendisx/.config/modprobed.db",
 				"/usr/lib/firefox/firefox.cfg",
-				"/usr/lib/sysctl.d/99-cachyos-settings.conf",
 				"/home/shendisx/.cache/gnome-boxes/logs/archlinux.logs",
 				"/home/shendisx/wiki/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js",
 				"/home/shendisx/CarX Street_2024-11-25_20-58-00_summary.csv",
@@ -236,7 +300,6 @@
 				"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-151524-204-208.txt",
 				"/home/shendisx/moeuse.sh",
 				"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/Assassin4.ini",
-				"/etc/pacman.d/mirrorlist",
 				"/etc/pacman.conf",
 				"/etc/default/grub",
 				"/home/shendisx/Downloads/bench.sh",
@@ -244,7 +307,6 @@
 				"/home/shendisx/Cyb/Read_Me_Instructions.txt",
 				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-151410-224-228.txt",
 				"/home/shendisx/Assassins Creed Revelations/dxvk.conf",
-				"/home/shendisx/.config/qtile/config.py",
 				"/home/shendisx/mouse.sh",
 				"/home/shendisx/.config/fish/config.fish",
 				"/home/shendisx/Downloads/picom.conf",
@@ -255,10 +317,8 @@
 				"/home/shendisx/ente-auth-bin/PKGBUILD",
 				"/home/shendisx/.config/alacritty/alacritty.toml",
 				"/home/shendisx/.config/aura/config.toml",
-				"/etc/security/limits.d/99-realtime-privileges.conf",
 				"/usr/lib/modprobe.d/amdgpu.conf",
 				"/usr/share/pipewire/pipewire.conf",
-				"/etc/security/limits.conf",
 				"/home/shendisx/ente-auth-bin/PKGBUILD.rej",
 				"/tmp/tmp.XF7no0tgYE.fish",
 				"/tmp/tmp.RU3XhURP3M.fish",
@@ -280,18 +340,11 @@
 				"/home/shendisx/chromium-clang/PKGBUILD",
 				"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch.patch",
 				"/home/shendisx/kaboomland-log.txt",
-				"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c",
-				"/var/log/pacman.log",
-				"/home/shendisx/.config/kitty/kitty.conf",
-				"/home/shendisx/log.txt",
-				"/usr/lib/cachy-browser/cachyos.cfg",
-				"/usr/share/cachyos-fish-config/cachyos-config.fish",
-				"/usr/lib/firefox/defaults/pref/autoconfig.js",
-				"/home/shendisx/dotfiles-bulk/grub"
+				"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 51.0
 			},
 			"find_in_files":
 			{
@@ -305,21 +358,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"error",
-					"gpu_load",
-					"tuner",
-					"Patchset",
-					"HDMI-A-0",
-					"debug",
-					"someuser",
-					"anima",
-					"rate",
-					"Exec",
-					"warp",
-					"check",
-					"alacritty",
-					"stall",
-					"alacritty"
+					"font",
+					"modules-right"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -404,7 +444,7 @@
 			{
 			}
 		},
-		"new_window_width": 0.0
+		"new_window_width": 1920.0
 	},
 	"windows":
 	[
@@ -418,62 +458,16 @@
 			"buffers":
 			[
 				{
-					"file": "/home/shendisx/dotfiles-bulk/.gitignore",
+					"file": "/home/shendisx/dots/waybar/config.sway.jsonc",
 					"settings":
 					{
-						"buffer_size": 22,
+						"buffer_size": 8044,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					},
 					"undo_stack":
 					[
-						[
-							1,
-							1,
-							"insert",
-							{
-								"characters": "gog"
-							},
-							"AwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							2,
-							1,
-							"left_delete",
-							null,
-							"AQAAAAIAAAAAAAAAAgAAAAAAAAABAAAAZw",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAADAAAAAAAAAAMAAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							3,
-							1,
-							"insert",
-							{
-								"characters": "ogle-chrome"
-							},
-							"CwAAAAIAAAAAAAAAAwAAAAAAAAAAAAAAAwAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABgAAAAAAAAAAAAAABgAAAAAAAAAHAAAAAAAAAAAAAAAHAAAAAAAAAAgAAAAAAAAAAAAAAAgAAAAAAAAACQAAAAAAAAAAAAAACQAAAAAAAAAKAAAAAAAAAAAAAAAKAAAAAAAAAAsAAAAAAAAAAAAAAAsAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAANAAAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAA8L8"
-						],
-						[
-							4,
-							1,
-							"insert",
-							{
-								"characters": "\nchromium"
-							},
-							"CQAAAA0AAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAASAAAAAAAAAAAAAAASAAAAAAAAABMAAAAAAAAAAAAAABMAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAVAAAAAAAAAAAAAAAVAAAAAAAAABYAAAAAAAAAAAAAAA",
-							"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAANAAAAAAAAAA0AAAAAAAAAAAAAAAAA8L8"
-						]
 					]
-				},
-				{
-					"file": "/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
-					"settings":
-					{
-						"buffer_size": 3409,
-						"line_ending": "Unix"
-					}
 				}
 			],
 			"build_system": "",
@@ -532,25 +526,58 @@
 			},
 			"expanded_folders":
 			[
-				"/home/shendisx/wiki",
-				"/home/shendisx/wiki/src",
-				"/home/shendisx/wiki/src/content",
-				"/home/shendisx/wiki/src/content/docs",
-				"/home/shendisx/wiki/src/content/docs/configuration"
+				"/home/shendisx/.config/waybar"
 			],
 			"file_history":
 			[
+				"/home/shendisx/.config/sway/config",
+				"/usr/share/cachyos-hyprland-settings/hypr/keybinds.conf",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot-sway.json",
+				"/home/shendisx/.config/nwg-bar/bar-screenshot.json",
+				"/home/shendisx/.config/nwg-bar/screenshot.sh",
+				"/home/shendisx/dots/sway/binds",
+				"/home/shendisx/.config/pipewire/pipewire-pulse.conf",
+				"/home/shendisx/.config/waybar/waybar.sh",
+				"/usr/share/cachyos-hyprland-settings/hypr/autostart.conf",
+				"/home/shendisx/.config/waybar/config.sway.jsonc",
+				"/home/shendisx/dots/sway/outputs",
+				"/home/shendisx/dots/sway/output",
+				"/home/shendisx/dots/sway/scripts/import-gsettings",
+				"/home/shendisx/dots/waybar/config.sway.jsonc",
+				"/home/shendisx/.config/pipewire/pipewire.conf",
+				"/home/shendisx/cachyos-hyprland-settings/etc/profile.d/Hyprland.sh",
+				"/home/shendisx/cachyos-hyprland-settings/etc/skel/.profile",
 				"/home/shendisx/.config/hypr/hyprland.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/colors.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/decorations.conf",
+				"/usr/share/cachyos-hyprland-settings/hypr/variables.conf",
+				"/etc/environment",
+				"/usr/lib/sysctl.d/99-cachyos-settings.conf",
+				"/home/shendisx/dots/sway/autostart",
+				"/home/shendisx/dots/sway/input",
+				"/var/lib/private/adguardhome/AdGuardHome.yaml",
+				"/usr/share/cachyos-hyprland-settings/hypr/defaults.conf",
+				"/etc/security/limits.conf",
+				"/etc/security/limits.d/99-realtime-privileges.conf",
+				"/home/shendisx/.config/qtile/config.py",
+				"/home/shendisx/Downloads/message.txt",
+				"/home/shendisx/Downloads/HFW DiskCache Enabler/REMOVE DIRECT STORAGE!.txt",
+				"/home/shendisx/.config/modprobed.db",
+				"/home/shendisx/.config/sway/scripts/window-opacity.sh",
+				"/etc/pacman.d/mirrorlist",
+				"/home/shendisx/.config/sway/scripts/screentoggle.sh",
+				"/home/shendisx/dotfiles-bulk/hypr/hyprland.conf",
+				"/home/shendisx/dotfiles-bulk/.gitignore",
+				"/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+				"/home/shendisx/.config/MangoHud/MangoHud.conf",
+				"/etc/pacman.d/cachyos-mirrorlist",
+				"/home/shendisx/Downloads/Assassins-Creed-Unity-SteamRIP.com/Read_Me_Instructions.txt",
 				"/home/shendisx/wiki/tailwind.config.cjs",
 				"/home/shendisx/.archlinux.draft.txt",
 				"/home/shendisx/wiki/astro.config.mjs",
 				"/home/shendisx/wiki/src/content/docs/configuration/gaming.mdx",
 				"/home/shendisx/Downloads/log4.txt",
-				"/home/shendisx/.config/MangoHud/MangoHud.conf",
-				"/home/shendisx/.config/modprobed.db",
-				"/home/shendisx/dotfiles-bulk/.gitignore",
 				"/usr/lib/firefox/firefox.cfg",
-				"/usr/lib/sysctl.d/99-cachyos-settings.conf",
 				"/home/shendisx/.cache/gnome-boxes/logs/archlinux.logs",
 				"/home/shendisx/wiki/node_modules/vite/dist/node/chunks/dep-CB_7IfJ-.js",
 				"/home/shendisx/CarX Street_2024-11-25_20-58-00_summary.csv",
@@ -590,7 +617,6 @@
 				"/home/shendisx/Cyb/Cyberpunk 2077/Cyberpunk2077.exe-20241112-151524-204-208.txt",
 				"/home/shendisx/moeuse.sh",
 				"/home/shendisx/BlackFlag/drive_c/users/shendisx/Documents/Assassin's Creed IV Black Flag/Assassin4.ini",
-				"/etc/pacman.d/mirrorlist",
 				"/etc/pacman.conf",
 				"/etc/default/grub",
 				"/home/shendisx/Downloads/bench.sh",
@@ -598,7 +624,6 @@
 				"/home/shendisx/Cyb/Read_Me_Instructions.txt",
 				"/home/shendisx/Cyb/Cyberpunk 2077/bin/x64/REDEngineErrorReporter.exe-20241112-151410-224-228.txt",
 				"/home/shendisx/Assassins Creed Revelations/dxvk.conf",
-				"/home/shendisx/.config/qtile/config.py",
 				"/home/shendisx/mouse.sh",
 				"/home/shendisx/.config/fish/config.fish",
 				"/home/shendisx/Downloads/picom.conf",
@@ -609,10 +634,8 @@
 				"/home/shendisx/ente-auth-bin/PKGBUILD",
 				"/home/shendisx/.config/alacritty/alacritty.toml",
 				"/home/shendisx/.config/aura/config.toml",
-				"/etc/security/limits.d/99-realtime-privileges.conf",
 				"/usr/lib/modprobe.d/amdgpu.conf",
 				"/usr/share/pipewire/pipewire.conf",
-				"/etc/security/limits.conf",
 				"/home/shendisx/ente-auth-bin/PKGBUILD.rej",
 				"/tmp/tmp.XF7no0tgYE.fish",
 				"/tmp/tmp.RU3XhURP3M.fish",
@@ -634,18 +657,11 @@
 				"/home/shendisx/chromium-clang/PKGBUILD",
 				"/home/shendisx/Downloads/0001-drm-amdgpu-WIP-test-patch.patch",
 				"/home/shendisx/kaboomland-log.txt",
-				"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c",
-				"/var/log/pacman.log",
-				"/home/shendisx/.config/kitty/kitty.conf",
-				"/home/shendisx/log.txt",
-				"/usr/lib/cachy-browser/cachyos.cfg",
-				"/usr/share/cachyos-fish-config/cachyos-config.fish",
-				"/usr/lib/firefox/defaults/pref/autoconfig.js",
-				"/home/shendisx/dotfiles-bulk/grub"
+				"/home/shendisx/scx/scheds/rust/scx_bpfland/src/bpf/main.bpf.c"
 			],
 			"find":
 			{
-				"height": 35.0
+				"height": 51.0
 			},
 			"find_in_files":
 			{
@@ -659,21 +675,8 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"error",
-					"gpu_load",
-					"tuner",
-					"Patchset",
-					"HDMI-A-0",
-					"debug",
-					"someuser",
-					"anima",
-					"rate",
-					"Exec",
-					"warp",
-					"check",
-					"alacritty",
-					"stall",
-					"alacritty"
+					"font",
+					"modules-right"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -693,7 +696,7 @@
 			"folders":
 			[
 				{
-					"path": "/home/shendisx/wiki"
+					"path": "/home/shendisx/.config/waybar"
 				}
 			],
 			"groups":
@@ -703,50 +706,20 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/shendisx/dotfiles-bulk/.gitignore",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 22,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										22,
-										22
-									]
-								],
-								"settings":
-								{
-									"lsp_uri": "file:///home/shendisx/dotfiles-bulk/.gitignore",
-									"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"stack_multiselect": false,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
+							"file": "/home/shendisx/dots/waybar/config.sway.jsonc",
 							"selected": true,
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 3409,
+								"buffer_size": 8044,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										0,
-										0
+										2424,
+										2424
 									]
 								],
 								"settings":
@@ -763,13 +736,13 @@
 										}
 									],
 									"lsp_active": true,
-									"lsp_uri": "file:///home/shendisx/.config/konsave/profiles/myconfig/conf.yaml",
-									"syntax": "Packages/YAML/YAML.sublime-syntax",
-									"tab_size": 4,
+									"lsp_uri": "file:///home/shendisx/dots/waybar/config.sway.jsonc",
+									"syntax": "Packages/JSON/JSON.sublime-syntax",
+									"tab_size": 2,
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 1287.0,
+								"translation.y": 1651.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
@@ -827,7 +800,7 @@
 				"height": 0.0
 			},
 			"pinned_build_system": "",
-			"position": "0,1,0,0,0,0,0,1920,1000,1920,1080,0",
+			"position": "0,0,0,0,0,0,0,1920,1007,1920,1080,0",
 			"project": "",
 			"replace":
 			{
@@ -864,6 +837,7 @@
 			"selected_group": 0,
 			"settings":
 			{
+				"lsp_show_inlay_hints": false
 			},
 			"show_minimap": true,
 			"show_open_files": false,
@@ -874,7 +848,7 @@
 			"template_settings":
 			{
 			},
-			"window_id": 1,
+			"window_id": 3,
 			"workspace_name": ""
 		}
 	],

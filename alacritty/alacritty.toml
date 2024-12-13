@@ -53,7 +53,7 @@ background = "#000000"
 foreground = "#d6dae4"
 
 [colors.selection]
-background = "#1f1f1f"
+background = "#00ddff"
 foreground = "#131313"
 text = "CellForeground"
 

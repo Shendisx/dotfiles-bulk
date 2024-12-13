@@ -207,18 +207,25 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# Flameshot
+# Grimshot
 
-bindsym Print exec grimshot copy area
+bindsym Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym Shift+Print exec grimshot copy screen
 
 # Thunar
 bindsym $mod+e exec thunar
+
+# Waybar
+
+bindsym $mod+o exec killall -SIGUSR2 waybar
 
 
 # Monitor Scripts
 
 bindsym XF86Tools exec ~/.config/sway/scripts/screentoggle.sh | sudo cpupower frequency-set -g powersave
 bindsym XF86AudioStop exec sudo cpupower frequency-set -g schedutil
+bindsym XF86AudioNext exec sudo cpupower frequency-set -g performance
+bindsym XF86AudioPrev exec sudo cpupower frequency-set -g powersave
 
 # Mute volume
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -228,6 +235,10 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 # Increase volume
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+# Play/Pause
+
+bindsym XF86AudioPlay exec playerctl play-pause
 
 # Screenshot
 bindsym $mod+s exec --no-startup-id /usr/bin/grimshot --notify copy output
@@ -251,7 +262,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
                                                   SWAYSOCK \
                                                   XDG_CURRENT_DESKTOP=sway \
                                                   WAYLAND_DISPLAY
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec /usr/bin/lxqt-policykit-agent
 exec jamesdsp -t -s
 exec mako
 exec corectrl
@@ -282,7 +293,9 @@ for_window {
   # Enable floating for specific apps
   [title="Application Finder"] floating enable
   [title="Alacritty"] floating enable
+  [title="Alacritty"] focus 
   [app_id="wdisplays"] floating enable
+  [app_id="lxqt-policykit"] floating enable
 
   # Set specific window sizes
   #[app_id="wdisplays"] resize set 1000 600

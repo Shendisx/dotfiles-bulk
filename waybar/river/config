@@ -6,9 +6,7 @@
   //"width": 1350, // Waybar width
   // Choose the order of the modules idle_inhibitor
   "modules-left": [
-    "custom/launcher",
     "river/tags",
-    "custom/swap",
     "tray",
     "mpd#2",
     "mpd#3",
@@ -17,19 +15,16 @@
   ],
   "modules-center": ["clock"],
   "modules-right": [
-    "backlight",
     "pulseaudio",
     "temperature",
-    "custom/clipboard",
     "memory",
     "network",
-    "custom/power"
   ],
 
   // Modules configuration
 
    "river/tags": {
-		"num-tags": 3,
+		"num-tags": 8,
        "tag-labels": ["", "", "", "", "", ""]
     },
   "mpd": {

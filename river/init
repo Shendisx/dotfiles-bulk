@@ -200,6 +200,7 @@ riverctl float-filter-add title "bubble"
 riverctl float-filter-add title "task_dialog"
 riverctl float-filter-add title "menu"
 riverctl float-filter-add title "Confirm to replace files"
+riverctl float-filter-add title "lxqt-policykit"
 riverctl float-filter-add "flameshot"
 
 # Set app-ids and titles of views which should use client side decorations
@@ -210,6 +211,9 @@ riverctl rule-add -app-id 'float*' -title 'foo' float
 
 # Make all views with app-id "bar" and any title use client-side decorations
 riverctl rule-add -app-id "bar" csd
+
+# Tearing Support
+riverctl allow-tearing enabled
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.

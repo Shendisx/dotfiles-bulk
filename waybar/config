@@ -89,15 +89,11 @@
     },
     "layer": "top",
     "modules-center": ["hyprland/window"],
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "mpris"],
+    "modules-left": ["hyprland/workspaces", "mpris"],
     "modules-right": [
       "clock",
       "network",
       "tray",
-      "custom/notification",
-      "custom/power_button",
-      "custom/screenshot",
-      "idle_inhibitor"
     ],
     "mpris": {
       "dynamic-importance-order": ["title", "artist"],
@@ -167,15 +163,10 @@
       "tooltip-format": "{used:0.1f}GiB used | {swapUsed:0.1f}GiB used"
     },
     "modules-center": ["wlr/taskbar"],
-    "modules-left": ["custom/fan", "temperature", "cpu", "memory", "user"],
+    "modules-left": ["temperature", "cpu", "memory", "user"],
     "modules-right": [
       "disk",
-      "disk#home",
-      "disk#games",
-      "disk#backups",
       "pulseaudio",
-      "pulseaudio#mic",
-      "privacy"
     ],
     "position": "bottom",
     "privacy": {

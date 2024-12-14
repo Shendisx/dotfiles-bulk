@@ -66,7 +66,6 @@
       "sway/window"
     ],
     "modules-left": [
-      "custom/launcher",
       "sway/workspaces",
       "mpris"
     ],
@@ -74,9 +73,6 @@
       "clock",
       "network",
       "tray",
-      "custom/notification",
-      "custom/power_button",
-      "custom/screenshot",
     ],
     "mpris": {
       "dynamic-importance-order": [
@@ -171,17 +167,14 @@
       "tooltip-format": "{used:0.1f}GiB used | {swapUsed:0.1f}GiB used"
     },
     "modules-center": [
-      "wlr/taskbar"
     ],
     "modules-left": [
       "temperature",
       "cpu",
       "memory",
-      "user"
     ],
     "modules-right": [
       "disk",
-      "pulseaudio",
     ],
     "position": "bottom",
     "privacy": {

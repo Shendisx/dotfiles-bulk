@@ -19,15 +19,16 @@
         //"custom/rofi",
         "hyprland/workspaces",
         //"hyprland/submap",
-        //"temperature",
+        "temperature",
         //"idle_inhibitor",
         //"mpd"
-        "custom/media"
+        "custom/spotify"
     ],
     "modules-center": [
-        //"hyprland/window",
-        "clock#date"
-        //"custom/gammastep",
+        //"hyprland/window"
+        "clock#date",
+        //"custom/weather"
+        //"custom/gammastep"
     ],
     "modules-right": [
         //"backlight",
@@ -38,8 +39,8 @@
         //"pulseaudio",
         "wireplumber",
         //"custom/screenshot_t",
-        "custom/power",
-        "tray"
+        "tray",
+        //"custom/power"
     ],
 
 
@@ -65,7 +66,7 @@
         "on-click-middle": "pkill -9 wofi"
     },
     "custom/screenshot_t":{
-        "format":"",
+        "format":" ",
         "on-click": "~/.config/hypr/scripts/screenshot_full",
         "on-click-right":"~/.config/hypr/scripts/screenshot_area"
     },
@@ -101,9 +102,9 @@
     },
 
     "memory": {
-        "interval": 2,
+        "interval": 30,
         "format": "  {used:0.2f} / {total:0.0f} GB",
-        "on-click": "foot -e btop"
+        "on-click": "alacritty -e btop"
     },
 
     "battery": {
@@ -145,6 +146,7 @@
         "interval": 60,
         "exec": "~/.config/waybar/modules/storage.sh"
     },
+
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
@@ -163,6 +165,16 @@
         },
         "tooltip": "true"
     },
+    "custom/weather": {
+        "format": "{}",
+        "format-alt": "{alt}: {}",
+        "format-alt-click": "click-right",
+        "interval": 3600,
+        "exec": "curl -s 'https://wttr.in/?format=1'",
+        //"return-type": "json",
+        //"exec": "~/.config/waybar/modules/weather.sh",
+        "exec-if": "ping wttr.in -c1"
+    },
     "custom/pacman": {
         "format": "<big>􏆲</big>  {}",
         "interval": 3600,                     // every hour
@@ -174,6 +186,15 @@
         "min-length": 3
     },
 
+"custom/spotify": {
+    "exec": "~/.config/waybar/mediaplayer.py --player spotify",
+    "format": "{}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+},
+
     "custom/media": {
         "format": "{0} {1}",
         "return-type": "json",
@@ -183,12 +204,12 @@
             "default": "🎜"
         },
         "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        //"exec": "~/.config/waybar/mediaplayer.py" // Script in resources folder
+        // "exec": "~/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
 
     "custom/power": {
-        "format": "",
+        "format": " 󰐥 ",
         "tooltip": false,
         "on-click": "wlogout"
     },
@@ -200,8 +221,7 @@
     },
 
     "clock#date": {
-        "format": "{:%H:%M   %e %b}", // Icon: calendar-alt
-        //"format": "{:%I:%M %p  %A %b %d}",
+        "format": "󰥔  {:%H:%M \n %e %b}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "today-format": "<b>{}</b>"
     },

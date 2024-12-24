@@ -269,8 +269,8 @@ exec corectrl
 exec /usr/bin/swayosd-server & disown
 exec /usr/bin/copyq & disown
 exec_always autotiling -w 1 2 3 4 5 6 7 8 9
-exec /usr/bin/waybar --config ~/.config/waybar/config.sway.jsonc & disown
-
+exec /usr/bin/waybar -c $HOME/.config/waybar/sway/config.jsonc -s $HOME/.config/waybar/sway/style.css
+exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
 # Sway variables
 
 include /etc/sway/config.d/*

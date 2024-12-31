@@ -87,7 +87,7 @@ riverctl map-pointer normal Super BTN_RIGHT resize-view
 riverctl map-pointer normal Super V toggle-float
 
 # Spawn rofi
-riverctl map normal Super D spawn "rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi"
+riverctl map normal Super D spawn "rofi -show drun"
 
 # Screenshot
 riverctl map normal None Print spawn "bash ~/.config/river/scripts/rofi_screenshot"

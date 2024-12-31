@@ -29,7 +29,7 @@ from libqtile.config import Click, Drag, Group, Key, Match, hook, Screen, KeyCho
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from libqtile.dgroups import simple_key_binder
-
+from libqtile.backend.wayland import InputConfig
 
 mod = "mod4" #aka Windows key
 terminal = "alacritty" #This is an example on how flexible Qtile is, you create variables then use them in a keybind for example (see below)
@@ -137,7 +137,7 @@ keys = [
 
 ##Misc keybinds
     Key([], "Print", lazy.spawn("flameshot gui"), desc='Screenshot'),
-    Key(["control"], "Print", lazy.spawn("flameshot full -c -p ~/Pictures/"), desc='Screenshot'),
+    Key(["control"], "Print", lazy.spawn("grimshot copy screen"), desc='Screenshot'),
     Key([mod], "e", lazy.spawn(filemanager), desc="Open file manager")
 
 ]
@@ -539,9 +539,10 @@ reconfigure_screens = True
 auto_minimize = True
 
 # When using the Wayland backend, this can be used to configure input devices.
-wl_input_rules = None
-
-
+wl_input_rules = {
+    "9610:39:SINOWEALTH Wired Gaming Mouse": InputConfig(accel_profile="flat"),
+    "1183:14:Chicony Compaq Internet Keyboard": InputConfig(kb_layout="latam", kb_repeat_rate=150, kb_repeat_delay=200)
+}
 
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the

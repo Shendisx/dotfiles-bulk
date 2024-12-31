@@ -10,6 +10,7 @@ asus_atk0110
 ata_generic
 bridge
 ccp
+cdc_acm
 cdc_ether
 cec
 cfg80211

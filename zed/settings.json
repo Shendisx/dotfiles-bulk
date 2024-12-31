@@ -7,17 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
   "base_keymap": "SublimeText",
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
   "ui_font_size": 20,
-  "buffer_font_size": 16,
-  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 18,
+  "soft_wrap": "editor_width",
+  "buffer_font_family": "0xProto Nerd Font Mono",
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine",
+    "light": "Tokyo Night",
     "dark": "Ayu Dark",
     "lsp": {
       "typos": {

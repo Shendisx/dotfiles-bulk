@@ -1,0 +1,8 @@
+[019854eb-92cd-463e-890e-de980d97478b]
+Description=Ala
+wmclass=alacritty
+wmclassmatch=1
+
+[General]
+count=1
+rules=019854eb-92cd-463e-890e-de980d97478b

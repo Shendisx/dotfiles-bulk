@@ -113,7 +113,7 @@ Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows
 Walk Through Windows (Reverse)=Alt+Shift+Tab,Alt+Shift+Tab,Walk Through Windows (Reverse)
 Walk Through Windows Alternative=none,,Walk Through Windows Alternative
 Walk Through Windows Alternative (Reverse)=none,,Walk Through Windows Alternative (Reverse)
-Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of Current Application
+Walk Through Windows of Current Application=none,Alt+`,Walk Through Windows of Current Application
 Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
 Walk Through Windows of Current Application Alternative=none,,Walk Through Windows of Current Application Alternative
 Walk Through Windows of Current Application Alternative (Reverse)=none,,Walk Through Windows of Current Application Alternative (Reverse)
@@ -199,7 +199,7 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 _k_friendly_name=Media Controller
 mediavolumedown=none,,Media volume down
 mediavolumeup=none,,Media volume up
-nextmedia=Media Next,Media Next,Media playback next
+nextmedia=none,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
 playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
@@ -258,17 +258,20 @@ _launch=Tools
 [services][net.local.alacritty.desktop]
 _launch=Meta+Return
 
+[services][net.local.alascript.sh.desktop]
+_launch=Ctrl+Alt+T
+
 [services][net.local.flameshot.desktop]
 _launch=Print
 
 [services][net.local.rofi.desktop]
 _launch=Meta+Space
 
-[services][net.local.setgov.sh.desktop]
+[services][net.local.sudo-2.desktop]
 _launch=Media Stop
 
-[services][net.local.setperf.sh.desktop]
-_launch=Meta+Media Stop
+[services][net.local.sudo.desktop]
+_launch=Media Next
 
 [services][systemsettings.desktop]
 _launch=none

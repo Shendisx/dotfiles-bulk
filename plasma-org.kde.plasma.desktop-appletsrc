@@ -4,27 +4,6 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1024x768=
-ItemGeometries-1920x1080=
-ItemGeometriesHorizontal=
-activityId=d5d73e85-06b0-44c6-b517-bd4dfdb45a62
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/cachyos-wallpapers/Dracula.png
-PreviewImage=/usr/share/wallpapers/cachyos-wallpapers/Dracula.png
-SlidePaths=/usr/share/wallpapers/
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -56,7 +35,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
 PreloadWeight=100
-popupHeight=550
+popupHeight=541
 popupWidth=713
 
 [Containments][2][Applets][3][Configuration][General]
@@ -71,7 +50,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:code.desktop,applications:thunar.desktop,applications:systemsettings.desktop,applications:firefox.desktop
+launchers=applications:systemsettings.desktop,applications:thunar.desktop,applications:firefox.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -82,17 +61,20 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][2][Applets][7][Configuration]
-PreloadWeight=100
+PreloadWeight=70
 SystrayContainmentId=8
 
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;20;21
 
-[Containments][25]
+[Containments][22]
+ItemGeometries-1536x864=
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
 activityId=d5d73e85-06b0-44c6-b517-bd4dfdb45a62
 formfactor=0
 immutability=1
-lastScreen=1
+lastScreen=0
 location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
@@ -117,7 +99,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=75
+PreloadWeight=55
 
 [Containments][8][Applets][11][Configuration][General]
 migrated=true
@@ -127,7 +109,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][12][Configuration]
-PreloadWeight=100
+PreloadWeight=70
 
 [Containments][8][Applets][13]
 immutability=1
@@ -164,10 +146,6 @@ plugin=org.kde.plasma.brightness
 [Containments][8][Applets][22][Configuration]
 PreloadWeight=0
 
-[Containments][8][Applets][22][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
 [Containments][8][Applets][23]
 immutability=1
 plugin=org.kde.plasma.battery
@@ -177,14 +155,14 @@ PreloadWeight=0
 
 [Containments][8][Applets][24]
 immutability=1
+plugin=org.kde.plasma.networkmanagement
+
+[Containments][8][Applets][25]
+immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][8][Applets][24][Configuration]
+[Containments][8][Applets][25][Configuration]
 PreloadWeight=0
-
-[Containments][8][Applets][26]
-immutability=1
-plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][9]
 immutability=1
@@ -196,4 +174,4 @@ knownItems=org.kde.plasma.cameraindicator,org.kde.plasma.networkmanagement,org.k
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,d5d73e85-06b0-44c6-b517-bd4dfdb45a62
+screenMapping=desktop:/steam.desktop,0,4cb54983-154e-4a1e-a8fa-ecfad5391887,desktop:/swappy-20241213_122542.png,0,4cb54983-154e-4a1e-a8fa-ecfad5391887,desktop:/swappy-20241213_122344.png,0,4cb54983-154e-4a1e-a8fa-ecfad5391887

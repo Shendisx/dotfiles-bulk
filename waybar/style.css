@@ -71,11 +71,6 @@ window#waybar.hidden {
     opacity: 1;
 }
 
-#mpris {
-	background-color: #111827;
-	border-radius: 12px;
-}
-
 #clock,
 #battery,
 #cpu,

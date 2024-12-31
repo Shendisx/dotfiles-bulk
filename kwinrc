@@ -13,9 +13,12 @@ LongitudeAuto=-58.37
 NightTemperature=6500
 
 [Plugins]
-blurEnabled=true
+blurEnabled=false
 shakecursorEnabled=false
 zoomEnabled=false
+
+[TabBox]
+ApplicationsMode=1
 
 [Tiling]
 padding=4

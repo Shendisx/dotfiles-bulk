@@ -262,7 +262,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
                                                   SWAYSOCK \
                                                   XDG_CURRENT_DESKTOP=sway \
                                                   WAYLAND_DISPLAY
-exec /usr/bin/lxqt-policykit-agent
+exec /usr/bin/fuzzel-polkit-agent
 exec jamesdsp -t -s
 exec mako
 exec corectrl
@@ -275,14 +275,12 @@ exec --no-startup-id gnome-keyring-daemon --start --components=pkcs11,secrets,ss
 
 include /etc/sway/config.d/*
 smart_gaps on
-smart_borders on
+smart_borders off
 focus_follows_mouse yes
 
 # Window Rules
 
 for_window {
-  # Hide borders
-  [class="^.*"] border pixel 0
 
   # Enable floating for specific windows
   [window_role="pop-up"] floating enable
@@ -300,3 +298,12 @@ for_window {
   # Set specific window sizes
   #[app_id="wdisplays"] resize set 1000 600
 }
+
+# Set the default border width
+default_border pixel 2
+
+# Configure the focused window border color
+client.focused "#00ff00" "#00ff00" "#ffffff"  
+
+# Optionally, configure the unfocused window border color
+client.unfocused "#000000" "#000000" "#ffffff" 

@@ -49,6 +49,8 @@ application/vnd.efi.iso=gnome-disk-image-mounter.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
 application/octet-stream=sublime_text.desktop;sublime_merge.desktop;
 application/x-desktop=sublime_text.desktop;
+application/x-zerosize=sublime_text.desktop;
+text/x-csrc=dev.zed.Zed-Preview.desktop;
 
 [Default Applications]
 application/gzip=org.gnome.FileRoller.desktop;

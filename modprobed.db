@@ -34,6 +34,8 @@ ext4
 f2fs
 fam15h_power
 fat
+fixed_phy
+fwnode_mdio
 garp
 gf128mul
 ghash_clmulni_intel
@@ -79,6 +81,7 @@ nft_reject
 nft_reject_ipv4
 ntfs3
 ntsync
+of_mdio
 pata_acpi
 pata_atiixp
 pcspkr

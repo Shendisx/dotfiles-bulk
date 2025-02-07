@@ -38,6 +38,7 @@ alias checkcpufreq='watch -n.5 "grep \"^[c]pu MHz\" /proc/cpuinfo"'
 alias whichpackage='pacman -Qo'
 alias auracheck='aura -Syu && aura -Akaxu'
 alias ff='fzf_file_search'
+alias uwsmm='systemd-cat -t uwsm_start uwsm start default'
 set -U EDITOR subl
 
 # overwrite greeting

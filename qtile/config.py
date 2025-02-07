@@ -30,6 +30,9 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from libqtile.dgroups import simple_key_binder
 from libqtile.backend.wayland import InputConfig
+from qtile_extras import widget
+from qtile_extras.widget.decorations import PowerLineDecoration
+
 
 mod = "mod4" #aka Windows key
 terminal = "alacritty" #This is an example on how flexible Qtile is, you create variables then use them in a keybind for example (see below)
@@ -132,8 +135,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl s 5%-"), desc='brightness Down'),
     Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
     Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
-    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g schedutil"]), desc='Enable schedutil'),
-    Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance'),
+    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance'),
 
 ##Misc keybinds
     Key([], "Print", lazy.spawn("flameshot gui"), desc='Screenshot'),
@@ -245,6 +247,9 @@ def open_btop():
 def open_pavucontrol():
     qtile.spawn("pavucontrol")
 
+def screenshot():
+    qtile.spawn("flameshot gui")
+
 def powersave():
     """Toggle the eww bar."""
     script = os.path.expanduser('/sbin/powersave.sh')
@@ -252,15 +257,29 @@ def powersave():
     qtile.spawn("xset dpms force standby")
 
 
+
 # █▄▄ ▄▀█ █▀█
 # █▄█ █▀█ █▀▄
+
+
+powerline_left = {
+    "decorations": [
+        PowerLineDecoration(path="rounded_left")
+    ]
+}
+
+powerline_right = {
+    "decorations": [
+        PowerLineDecoration(path="rounded_right")
+    ]
+}
 
 screens = [
     Screen(
         top = bar.Bar(
             [
                 widget.Spacer(
-                    length = 18,
+                    length = 0,
                     background = '#033C4B',
                 ),
 
@@ -270,14 +289,16 @@ screens = [
                     mouse_callbacks = {'Button1': open_launcher},
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/6.png',
+                widget.Spacer(
+                    **powerline_right,
+                    length = 5,
+                    background = '#033C4B',
                 ),
 
                 widget.GroupBox(
                     fontsize = 16,
                     borderwidth = 0,
-                    highlight_method = 'block',
+                    highlight_method = 'circle',
                     active = '#56D9C7', #Active workspaces circle color
                     block_highlight_text_color = "#00F076", #Current workspace circle color
                     highlight_color = '#4B427E',
@@ -291,14 +312,13 @@ screens = [
                     urgent_border = '#52548D',
                     rounded = True,
                     disable_drag = True,
+                    **powerline_left,
                  ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',
+                widget.Spacer(
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
                 widget.CurrentLayoutIcon(
@@ -308,79 +328,89 @@ screens = [
                 ),
 
                 widget.CurrentLayout(
+                    **powerline_left,
                     background ='#046F5F',
                     font = 'Noto Sans Medium',
                     fontsize = 16,
                     padding = 0,
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',
+                widget.Spacer(
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
                 widget.WindowName(
+                    **powerline_left,
                     background = '#046F5F',
-                    #format = "{name}",
+                    format = "{state}{name}",
                     font = 'Noto Sans Medium',
                     fontsize = 16,
                     empty_group_string = 'Desktop',
-                    padding = 0,
+                    padding = 2,
+                    scroll=True,
+                    scroll_fixed_width=True,
+                    width=465,
+                    #max_chars = 40,
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
+                widget.Spacer(
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/1.png',
-                    background = '#52548D',
+                widget.Net(
+                    **powerline_left,
+                    background = '#046F5F',
+                    format='{down:.0f}{down_suffix} ↓↑ {up:.0f}{up_suffix}',
+                    font = 'Noto Sans Medium',
+                    fontsize = 16,
+                    width = 120,
+                ),
+
+                widget.Spacer(
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
                 widget.CPU(
+                    **powerline_left,
                     font = "Noto Sans Medium",
-                    format='CPU:({load_percent:.0f}%|{freq_current}GHz)',
+                    #format='CPU:({load_percent:.0f}%|{freq_current}GHz)',
                     fontsize = 16,
                     margin = 0,
                     padding = 0,
                     background = '#046F5F',
                     mouse_callbacks = {'Button1': open_btop},
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',
-                    background = '#52548D',
-                ),
-
-                widget.Systray(
-                    background = '#046F5F',
-                    icon_size = 24,
-                    padding = 3,
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',
-                    background = '#52548D',
+                    scroll_fixed_width = True,
+                    width = 135,
                 ),
 
                 widget.Spacer(
-                    length = 0,
-                    background = '#046f5f',
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
+                ),
+
+                widget.Systray(
+                    **powerline_left,
+                    background = '#046F5F',
+                    icon_size = 24,
+                    padding = 4,
+                ),
+
+                widget.Spacer(
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
                 widget.Memory(
-                    format = 'RAM:({MemUsed:.0f}MB|{MemTotal:.0f}MB)',
+                    **powerline_left,
+                    format = '{MemUsed: .0f}{mm} / {MemTotal:.0f}{mm}',
                     font = "Noto Sans Medium",
                     fontsize = 16,
                     padding = 0,
@@ -389,8 +419,9 @@ screens = [
                 ),
 
                 widget.Spacer(
-                    length = 6,
-                    background = '#046f5f',
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
                 widget.Image(
@@ -407,52 +438,22 @@ screens = [
                 ),
 
                 widget.PulseVolume(
+                    **powerline_left,
                     font= 'Noto Sans Medium',
                     fontsize = 16,
                     padding = 0,
                     background = '#046F5F',
                 ),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/1.png',
-                    background = '#4B427E',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/Bar-Icons/calendar.svg',
-                    background = '#046F5F',
-                    margin_y = 3,
-                    scale = True,
-                ),
-
                 widget.Spacer(
-                    length = 6,
-                    background = '#046f5f',
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
 
                 widget.Clock(
-                    format = '%d/%m/%y ', #Here you can change between USA or another timezone
-                    background = '#046f5f',
-                    font = "Noto Sans Medium",
-                    fontsize = 16,
-                    padding = 0,
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/Bar-Icons/clock.svg',
-                    background = '#046F5F',
-                    margin_y = 3,
-                    margin_x = 5,
-                    scale = True,
-                ),
-
-                widget.Clock(
-                    format = '%H:%M',
+                    **powerline_left,
+                    format = '%d/%m/%y %H:%M', #Here you can change between USA or another timezone
                     background = '#046f5f',
                     font = "Noto Sans Medium",
                     fontsize = 16,
@@ -460,15 +461,16 @@ screens = [
                 ),
 
                 widget.Spacer(
-                    length = 18,
-                    background = '#046f5f',
+                    **powerline_right,
+                    length = 10,
+                    background = '#033C4B',
                 ),
             ],
             30,  # Bar size (all axis)
-            margin = [0,8,6,8], # Bar margin (Top,Right,Bottom,Left)
+            margin = [0,6,6,6], # Bar margin (Top,Right,Bottom,Left)
             x11_drag_polling_rate = 480,
-            width = 1024,
-            height = 768,
+            #width = 1024,
+            #height = 768,
         ),
         wallpaper='~/.config/qtile/Wallpaper/Skyscraper.png',
         wallpaper_mode="fill",

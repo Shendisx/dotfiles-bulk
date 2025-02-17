@@ -7,10 +7,9 @@
 #wlr-randr --output HDMI-A-1 --mode 1920x1080@60
 /usr/bin/lxqt-policykit-agent &
 /usr/bin/wired &
-/usr/bin/jamesdsp -s -t &
-/usr/bin/adaptivemmd &
-/usr/local/sbin/irqbalance &
+/usr/bin/easyeffects --gapplication-service &
 /usr/bin/copyq &
+/usr/bin/corectrl &
 xset r rate 220 60 &
 eval $(gnome-keyring-daemon --start) &
 #nm-applet &

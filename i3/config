@@ -100,6 +100,11 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+# Screen
+
+bindsym XF86Tools exec sudo cpupower frequency-set -g powersave | xset dpms force standby
+bindsym XF86AudioNext exec sudo cpupower frequency-set -g performance
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -127,7 +132,7 @@ bindsym $mod+r mode "resize"
 bar {
     font pango:DejaVu Sans Mono, FontAwesome 12
     position top
-    status_command /usr/bin/i3status-rs /home/array/.config/i3status-rust/config.toml
+    status_command /usr/bin/i3status-rs /home/shendisx/.config/i3status-rust/config.toml
     colors {
         separator #666666
         background #222222
@@ -250,7 +255,7 @@ for_window [class="Pavucontrol"] floating enable, move position mouse, sticky en
 
 exec --no-startup-id dunst
 #exec --no-startup-id fastcompmgr -o 0.4 -r 12 -c -C
-#exec --no-startup-id picom
+exec --no-startup-id picom --config .config/qtile/scripts/picom.conf
 #exec --no-startup-id redshift
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -258,3 +263,4 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always mkfifo /tmp/xobpipe && tail -f /tmp/xobpipe | xob -t 2170 & disown
 #exec ~/.i3/launch.sh
 exec --no-startup-id autotiling
+exec --no-startup-id easyeffects --gapplication-service

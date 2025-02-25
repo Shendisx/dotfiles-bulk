@@ -23,7 +23,6 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $HOME/colors.png fill
 #
 # Example configuration:
 #
@@ -263,7 +262,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
                                                   XDG_CURRENT_DESKTOP=sway \
                                                   WAYLAND_DISPLAY
 exec /usr/bin/fuzzel-polkit-agent
-exec jamesdsp -t -s
+exec easyeffects --gapplication-service
 exec mako
 exec corectrl
 exec /usr/bin/swayosd-server & disown

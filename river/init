@@ -17,7 +17,7 @@
 
 riverctl spawn "dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS SEATD_SOCK DISPLAY WAYLAND_DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP=river"
 riverctl spawn mako
-riverctl spawn "nm-applet --indicator"
+#riverctl spawn "nm-applet --indicator"
 riverctl spawn "/usr/bin/lxqt-policykit-agent"
 riverctl spawn "waybar -c $HOME/.config/waybar/river/config -s $HOME/.config/waybar/river/style.css"
 riverctl spawn corectrl

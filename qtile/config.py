@@ -168,6 +168,12 @@ for i in groups:
 ###𝙇𝙖𝙮𝙤𝙪𝙩###
 
 layouts = [
+     layout.Columns(
+        margin = 0,
+        border_focus = '#00DC6C',
+        border_normal = '#1F1D2E',
+        border_width = 3,
+    ),
     layout.Bsp(
         border_focus = '#00DC6C',
         border_normal = '#1F1D2E',
@@ -185,12 +191,6 @@ layouts = [
         border_normal = '#1F1D2E',
         margin = 0,
         border_width = 0,
-    ),
-    layout.Columns(
-        margin = 0,
-        border_focus = '#00DC6C',
-        border_normal = '#1F1D2E',
-        border_width = 3,
     ),
     layout.Max(
         border_focus = '#00DC6C',
@@ -256,16 +256,16 @@ def powersave():
 
 # █▄▄ ▄▀█ █▀█
 # █▄█ █▀█ █▀▄
- 
+
 screens = [
     Screen(
         top = bar.Bar(
-            [   
+            [
                 widget.Spacer(
                     length = 18,
                     background = '#033C4B',
                 ),
-                
+
                 widget.Image(
                     filename = '~/.config/qtile/Assets/launch_Icon.png',
                     background = '#033C4B',
@@ -317,7 +317,7 @@ screens = [
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',                
+                    filename = '~/.config/qtile/Assets/5.png',
                 ),
 
                 widget.Image(
@@ -334,11 +334,11 @@ screens = [
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',                
-                ),  
+                    filename = '~/.config/qtile/Assets/5.png',
+                ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/1.png',                
+                    filename = '~/.config/qtile/Assets/1.png',
                     background = '#52548D',
                 ),
 
@@ -357,10 +357,10 @@ screens = [
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',                
+                    filename = '~/.config/qtile/Assets/2.png',
                     background = '#52548D',
-                ),  
-  
+                ),
+
                 widget.Systray(
                     background = '#046F5F',
                     icon_size = 24,
@@ -372,15 +372,15 @@ screens = [
                 ),
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',                
+                    filename = '~/.config/qtile/Assets/2.png',
                     background = '#52548D',
-                ),                    
-                                                
+                ),
+
                 widget.Spacer(
                     length = 0,
                     background = '#046f5f',
-                ),  
-               
+                ),
+
                 widget.Memory(
                     format = 'RAM:({MemUsed:.0f}MB/{MemTotal:.0f}MB)',
                     font = "IBM Plex Mono Medium",
@@ -393,7 +393,7 @@ screens = [
                 widget.Spacer(
                     length = 6,
                     background = '#046f5f',
-                ),  
+                ),
 
                 widget.Image(
                     filename = '~/.config/qtile/Assets/Bar-Icons/volume.svg',
@@ -406,8 +406,8 @@ screens = [
                 widget.Spacer(
                     length = 4,
                     background = '#046f5f',
-                ), 
-                
+                ),
+
                 widget.PulseVolume(
                     font= 'IBM Plex Mono Medium',
                     fontsize = 15,
@@ -417,11 +417,11 @@ screens = [
 
                 widget.Image(
                     filename = '~/.config/qtile/Assets/5.png',
-                ),                
+                ),
 
 
                 widget.Image(
-                    filename = '~/.config/qtile/Assets/1.png',                
+                    filename = '~/.config/qtile/Assets/1.png',
                     background = '#4B427E',
                 ),
 
@@ -435,8 +435,8 @@ screens = [
                 widget.Spacer(
                     length = 6,
                     background = '#046f5f',
-                ), 
-        
+                ),
+
                 widget.Clock(
                     format = '%d/%m/%y ', #Here you can change between USA or another timezone
                     background = '#046f5f',
@@ -454,7 +454,7 @@ screens = [
                 ),
 
                 widget.Clock(
-                    format = '%H:%M', 
+                    format = '%H:%M',
                     background = '#046f5f',
                     font = "IBM Plex Mono Medium",
                     fontsize = 15,

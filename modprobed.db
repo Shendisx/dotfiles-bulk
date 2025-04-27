@@ -2,6 +2,7 @@
 842_compress
 842_decompress
 acpi_cpufreq
+adios
 aesni_intel
 af_key
 amdgpu
@@ -27,6 +28,7 @@ dm_mod
 drm_buddy
 drm_display_helper
 drm_exec
+drm_panel_backlight_quirks
 drm_suballoc_helper
 drm_ttm_helper
 exfat
@@ -47,6 +49,7 @@ i2c_piix4
 i2c_smbus
 inet_diag
 ip_tables
+irqbypass
 isofs
 jbd2
 k10temp
@@ -82,12 +85,15 @@ nft_reject_ipv4
 ntfs3
 ntsync
 of_mdio
+parport
+parport_pc
 pata_acpi
 pata_atiixp
 pcspkr
 pkcs8_key_parser
 polyval_clmulni
 polyval_generic
+ppdev
 r8169
 radeon
 realtek
@@ -122,7 +128,10 @@ snd_usbmidi_lib
 soundcore
 stp
 tap
+tcp_bbr
+tcp_dctcp
 tcp_diag
+tcp_htcp
 ttm
 tun
 tunnel4
@@ -156,6 +165,7 @@ xfrm6_tunnel
 xfrm_algo
 xfrm_interface
 xfrm_user
+xfs
 xhci_pci
 xhci_pci_renesas
 x_tables

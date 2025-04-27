@@ -10,6 +10,7 @@
 /usr/bin/easyeffects --gapplication-service &
 /usr/bin/copyq &
 /usr/bin/corectrl &
+/usr/bin/adaptivemmd &
 xset r rate 220 60 &
 eval $(gnome-keyring-daemon --start) &
 #nm-applet &

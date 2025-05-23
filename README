@@ -1,4 +1,4 @@
-Files in this directory contain configuration for systemd-sysctl.service, a
+wFiles in this directory contain configuration for systemd-sysctl.service, a
 service to configure sysctl kernel parameters.
 
 See man:sysctl.d(5) for explanation of the configuration file format, and

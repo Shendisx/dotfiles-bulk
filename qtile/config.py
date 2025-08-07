@@ -132,6 +132,7 @@ screens = [
                     other_screen_border=foreground_inactive,
                     urgent_border=urgent_color,
                     urgent_text=urgent_color,
+                    disable_drag=True,
                 ),
                 widget.WindowName(for_current_screen = True),      
                 widget.Systray(),
@@ -309,6 +310,7 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
+        Match(wm_class="Alacritty"),  # GPG key password entry
     ]
 )
 auto_fullscreen = True

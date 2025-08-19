@@ -60,7 +60,7 @@ keys = [
     Key([mod], "f", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "tab", lazy.spawn(windowsList), desc="Open windows list"),
     Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod, "control"], "f", lazy.window.toggle_fullscreen(), desc="Toggle fullscreen on the focused window"),
+    Key([mod], "f", lazy.window.toggle_fullscreen(), desc="Toggle focused window to fullscreen"),
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.spawn(powerMenu), desc="Open power menu"),
@@ -94,7 +94,7 @@ for i in groups:
 
 
 layouts = [
-    layout.Bsp(border_width=0, margin=0, fair=False),
+    layout.Bsp(border_width=3, border_focus='00DC6C', border_normal='#1F1D2E', margin=2),
     layout.Max(),
     # layout.Columns(),  
     # layout.Stack(num_stacks=2),
@@ -310,7 +310,8 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),  # ssh-askpass
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
-        Match(wm_class="Alacritty"),  # GPG key password entry
+        Match(wm_class="Alacritty"),  
+        Match(wm_class="easyeffects"),  
     ]
 )
 auto_fullscreen = True

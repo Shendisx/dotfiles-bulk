@@ -21,44 +21,8 @@ general = "Alacritty"
 history = 10000
 multiplier = 3
 
-[colors]
-draw_bold_text_with_bright_colors = true
-
-[colors.bright]
-black = "#d6dae4"
-blue = "#0f80d5"
-cyan = "#0f7cda"
-green = "#1dd260"
-magenta = "#524fb9"
-red = "#de342e"
-white = "#ffffff"
-yellow = "#f2bd09"
-
-[colors.cursor]
-cursor = "#b9b9b9"
-text = "CellBackground"
-
-[colors.normal]
-black = "#1f1f1f"
-blue = "#2a84d2"
-cyan = "#0f80d5"
-green = "#2cc55d"
-magenta = "#4e59b7"
-red = "#f71118"
-white = "#d6dae4"
-yellow = "#ecb90f"
-
-[colors.primary]
-background = "#000000"
-foreground = "#d6dae4"
-
-[colors.selection]
-background = "#00ddff"
-foreground = "#131313"
-text = "CellForeground"
-
 [font]
-size = 12
+size = 14
 
 [font.normal]
 family = "FiraCode Nerd Font"
@@ -77,7 +41,7 @@ family = "FiraCode Nerd Font"
 style = "Bold Italic"
 
 [selection]
-semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+semantic_escape_chars = ",│`| =\"' ()[]{}<>\t"
 save_to_clipboard = true
 
 [cursor]
@@ -171,3 +135,6 @@ action = "ResetFontSize"
 [general]
 live_config_reload = true
 working_directory = "None"
+import = [
+    "~/.config/alacritty/themes/yorumi-abyss.toml"
+]

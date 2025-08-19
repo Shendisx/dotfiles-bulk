@@ -20,7 +20,7 @@ riverctl spawn mako
 #riverctl spawn "nm-applet --indicator"
 riverctl spawn "/usr/bin/lxqt-policykit-agent"
 riverctl spawn "waybar -c $HOME/.config/waybar/river/config -s $HOME/.config/waybar/river/style.css"
-riverctl spawn corectrl
+#riverctl spawn corectrl
 riverctl spawn copyq
 
 riverctl map normal Super Return spawn alacritty
@@ -96,7 +96,7 @@ riverctl map normal None Print spawn "bash ~/.config/river/scripts/rofi_screensh
 riverctl map normal Super+Shift E exit
 
 # Thunar
-riverctl map normal Super E "thunar"
+riverctl map normal Super E spawn "thunar"
 
 
 

@@ -67,8 +67,8 @@ keys = [
 
     # Media controls
     Key([], "print", lazy.spawn('flameshot gui'), desc="Take a screenshot"),
-    Key([], "XF86AudioRaiseVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +2%'), desc="Up the volume"),
-    Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -2%'), desc="Down the volume"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +7%'), desc="Up the volume"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -7%'), desc="Down the volume"),
     Key([], "XF86AudioMute", lazy.spawn('pactl set-sink-mute @DEFAULT_SINK@ toggle'), desc="Toggle mute"),
     Key([], "XF86AudioMicMute", lazy.spawn('pactl set-source-mute @DEFAULT_SOURCE@ toggle'), desc="Toggle mute the microphone"),
     Key([], "XF86MonBrightnessDown", lazy.spawn('brightnessctl set 2%-'), desc="Down brightness"),

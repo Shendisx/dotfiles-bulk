@@ -42,11 +42,11 @@ keys = [
     Key([mod, "shift"], "k", lazy.layout.shuffle_up(), desc="Move window up"),
     # Grow windows. If current window is on the edge of screen and direction
     # will be to screen edge - window would shrink.
-    Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
-    Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
-    Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
-    Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
-    Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
+    #Key([mod, "control"], "h", lazy.layout.grow_left(), desc="Grow window to the left"),
+    #Key([mod, "control"], "l", lazy.layout.grow_right(), desc="Grow window to the right"),
+    #Key([mod, "control"], "j", lazy.layout.grow_down(), desc="Grow window down"),
+    #Key([mod, "control"], "k", lazy.layout.grow_up(), desc="Grow window up"),
+    #Key([mod], "n", lazy.layout.normalize(), desc="Reset all window sizes"),
 
     # Toggle between different screens
     Key([mod], "space", lazy.next_screen(), desc="Move to the next screen"),
@@ -63,22 +63,23 @@ keys = [
     Key([mod], "f", lazy.window.toggle_fullscreen(), desc="Toggle focused window to fullscreen"),
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
-    Key([mod, "control"], "q", lazy.spawn(powerMenu), desc="Open power menu"),
 
     # Media controls
     Key([], "print", lazy.spawn('flameshot gui'), desc="Take a screenshot"),
     Key([], "XF86AudioRaiseVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ +7%'), desc="Up the volume"),
     Key([], "XF86AudioLowerVolume", lazy.spawn('pactl set-sink-volume @DEFAULT_SINK@ -7%'), desc="Down the volume"),
     Key([], "XF86AudioMute", lazy.spawn('pactl set-sink-mute @DEFAULT_SINK@ toggle'), desc="Toggle mute"),
-    Key([], "XF86AudioMicMute", lazy.spawn('pactl set-source-mute @DEFAULT_SOURCE@ toggle'), desc="Toggle mute the microphone"),
-    Key([], "XF86MonBrightnessDown", lazy.spawn('brightnessctl set 2%-'), desc="Down brightness"),
-    Key([], "XF86MonBrightnessUp", lazy.spawn('brightnessctl set 2%+'), desc="Up brightness"),  
     Key([], "XF86AudioPlay", lazy.spawn('playerctl play-pause'), desc="Play-pause"),  
-    Key([], "XF86AudioNext", lazy.spawn('playerctl next'), desc="Next song"), 
-    Key([], "XF86AudioPrev", lazy.spawn('playerctl previous'), desc="Previous song"),
-    Key([], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave | xset dpms force standby"]), desc='Turn off monitor & Turn on powersave gov'),
-    Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g powersave"]), desc='Turn off monitor & Turn on powersave gov'),
-    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance'),
+    Key([], "XF86AudioNext", lazy.spawn(["sh", "-c", "scxctl start -s flash"]), desc="Execute Flash"), 
+    Key([mod], "XF86AudioNext", lazy.spawn(["sh", "-c", "scxctl switch -s bpfland"]), desc="Execute BPFLAND"), 
+    Key([], "XF86AudioPrev", lazy.spawn(["sh", "-c", "scxctl switch -s cosmos"]), desc="Execute Cosmos"),
+    Key([], "XF86AudioStop", lazy.spawn(["sh", "-c", "scxctl stop"]), desc='Stop running scx_scheduler'),
+    Key([], "XF86Tools", lazy.spawn(["sh", "-c", "scxctl switch -s lavd"]), desc='Execute LAVD'),
+    Key([mod, "control"], "q", lazy.spawn(["sh", "-c", "scxctl switch -m auto"]), desc="Switch to auto mode"),
+    Key([mod, "control"], "w", lazy.spawn(["sh", "-c", "scxctl switch -m gaming"]), desc="Switch to gaming mode"),
+    Key([mod, "control"], "e", lazy.spawn(["sh", "-c", "scxctl switch -m lowlatency"]), desc="Switch to lowlatency mode"),
+    Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "xset dpms force suspend"]), desc='Turn off monitor'),
+    Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance governor'),
 
 ]
 

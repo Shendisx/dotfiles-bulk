@@ -1,11 +1,3 @@
-
-
-#   ____________________________
-#  |                           |
-#  | Jhoalferco's qtile config |
-#  |___________________________|
-
-
 from libqtile import bar, layout, qtile, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
@@ -14,14 +6,12 @@ import os
 from colors import *
 
 os.system("bash ~/.config/qtile/autostart.sh")
-
-mod = "mod4"
 terminal = "alacritty"
 webBrowser = "firefox"
 fileExplorer = "thunar"
 appLauncher = "rofi -show drun"
 windowsList = "rofi -show window"
-powerMenu = "bash .config/qtile/powermenu.sh"
+mod = "mod4"
 
 
 keys = [
@@ -78,7 +68,7 @@ keys = [
     Key([mod, "control"], "q", lazy.spawn(["sh", "-c", "scxctl switch -m auto"]), desc="Switch to auto mode"),
     Key([mod, "control"], "w", lazy.spawn(["sh", "-c", "scxctl switch -m gaming"]), desc="Switch to gaming mode"),
     Key([mod, "control"], "e", lazy.spawn(["sh", "-c", "scxctl switch -m lowlatency"]), desc="Switch to lowlatency mode"),
-    Key([mod], "XF86Tools", lazy.spawn(["sh", "-c", "xset dpms force suspend"]), desc='Turn off monitor'),
+    Key([], 248, lazy.spawn(["sh", "-c", "xset dpms force suspend"]), desc='Turn off monitor'),
     Key([mod], "XF86AudioStop", lazy.spawn(["sh", "-c", "sudo cpupower frequency-set -g performance"]), desc='Enable performance governor'),
 
 ]
@@ -229,12 +219,6 @@ screens = [
                             foreground=foreground2, 
 
                         ),
-                        widget.TextBox(
-                            " 󰐥",
-                            background=color1, 
-                            foreground=foreground2,
-                            mouse_callbacks={'Button1':lazy.spawn(powerMenu)}
-                            ),
                     ],
                     text_closed=' ',
                     text_open='  ',

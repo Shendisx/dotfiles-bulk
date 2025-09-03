@@ -11,7 +11,7 @@ bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 #bindsym ctrl+space exec rofi -show run
-bindsym $mod+space exec "rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi"
+bindsym $mod+r exec "rofi -show drun -theme $HOME/.config/rofi/launchers/type-1/style-1.rasi"
 #bindsym ctrl+space exec dmenu_run
 
 # alternatively, you can use the cursor keys:
@@ -102,26 +102,38 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Screen
 
-bindsym XF86Tools exec sudo cpupower frequency-set -g powersave | xset dpms force standby
-bindsym XF86AudioNext exec sudo cpupower frequency-set -g performance
+# Execute Flash
+bindsym XF86AudioNext exec --no-startup-id sh -c "scxctl start -s flash"
 
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+# Execute BPFLAND ($mod + XF86AudioNext)
+bindsym $mod+XF86AudioNext exec --no-startup-id sh -c "scxctl switch -s bpfland"
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+# Execute Cosmos
+bindsym XF86AudioPrev exec --no-startup-id sh -c "scxctl switch -s cosmos"
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
-}
+# Stop running scx_scheduler
+bindsym XF86AudioStop exec --no-startup-id sh -c "scxctl stop"
 
-bindsym $mod+r mode "resize"
+# Execute LAVD
+bindsym XF86Tools exec --no-startup-id sh -c "scxctl switch -s lavd"
+
+# Execute P2Dq
+bindsym $mod+XF86Tools exec --no-startup-id sh -c "scxctl switch -s p2dq"
+
+# Switch to auto mode ($mod + Control + q)
+bindsym $mod+Control+q exec --no-startup-id sh -c "scxctl switch -m auto"
+
+# Switch to gaming mode ($mod + Control + w)
+bindsym $mod+Control+w exec --no-startup-id sh -c "scxctl switch -m gaming"
+
+# Switch to lowlatency mode ($mod + Control + e)
+bindsym $mod+Control+e exec --no-startup-id sh -c "scxctl switch -m lowlatency"
+
+# Turn off monitor ($mod + XF86Tools)
+bindcode 248 exec --no-startup-id sh -c "xset dpms force suspend"
+
+# Enable performance governor ($mod + XF86AudioStop)
+bindsym $mod+XF86AudioStop exec --no-startup-id sh -c "sudo cpupower frequency-set -g performance"
 
 
 #
@@ -132,7 +144,7 @@ bindsym $mod+r mode "resize"
 bar {
     font pango:DejaVu Sans Mono, FontAwesome 12
     position top
-    status_command /usr/bin/i3status-rs /home/shendisx/.config/i3status-rust/config.toml
+    status_command /usr/bin/i3status-rs /home/array/.config/i3status-rust/config.toml
     colors {
         separator #666666
         background #222222
@@ -251,16 +263,11 @@ for_window [class="Pavucontrol"] floating enable, move position mouse, sticky en
 #exec xrandr --output HDMI-A-0 --mode 1920x1080 --set TearFree on
 #exec xrandr --auto --output HDMI-1 --mode 1920x1080 --above HDMI-2
 
-#exec feh --bg-fill ~/.config/i3/wallpaper.png
-
 exec --no-startup-id dunst
-#exec --no-startup-id fastcompmgr -o 0.4 -r 12 -c -C
-exec --no-startup-id picom --config .config/qtile/scripts/picom.conf
-#exec --no-startup-id redshift
+exec --no-startup-id copyq
 exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
+exec --no-startup-id /usr/bin/lxqt-policykit-agent
 exec_always mkfifo /tmp/xobpipe && tail -f /tmp/xobpipe | xob -t 2170 & disown
-#exec ~/.i3/launch.sh
 exec --no-startup-id autotiling
 exec --no-startup-id easyeffects --gapplication-service
+exec --no-startup-id xset r rate 220 60 & xset s off &

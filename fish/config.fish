@@ -1,26 +1,16 @@
-function fzf_file_search
-    set file (find . -type f | fzf --preview 'cat {}')
-    if test -n "$file"
-        $EDITOR "$file"
-    end
-end
 
 
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 set -gx _JAVA_AWT_WM_NONREPARENTING 1
-#set -gx SDL_VIDEODRIVER wayland
-#set -gx QT_QPA_PLATFORM wayland
-#set -gx XDG_CURRENT_DESKTOP sway
-#set -gx XDG_CURRENT_DESKTOP sway
-set -gx XDG_DATA_DIRS /usr/share:/home/shendisx/.local/share/
+set -x --universal MESA_SHADER_CACHE_MAX_SIZE '12G'
 alias cat='bat'
 alias hdmi='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
 alias tearingoff='xrandr --output HDMI-A-0 --set TearFree off'
 alias tearingon='xrandr --output HDMI-A-0 --set TearFree on'
 alias 1080p='xrandr --output HDMI-A-0 --mode 1920x1080 --rate 60'
 alias 900p='xrandr --output HDMI-A-0 --mode 1440x900 --rate 75'
-alias 1080pw='wlr-randr --output HDMI-A-0 --mode 1920x1080@60'
-alias 900pw='wlr-randr --output HDMI-A-0 --mode 1440x900@74.984001'
+alias 1080pw='wlr-randr --output HDMI-A-1 --mode 1920x1080@60'
+alias 900pw='wlr-randr --output HDMI-A-1 --mode 1440x900@74.984001'
 alias exitwm='pkill -U $USER'
 alias audio='systemctl --user restart pipewire pipewire-pulse wireplumber'
 alias setpath='set -x PATH $PWD $PATH'
@@ -58,3 +48,4 @@ function config_ssh_agent
     echo "Error starting SSH agent."
   end
 end
+

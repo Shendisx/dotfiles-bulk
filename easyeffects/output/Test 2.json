@@ -1,9 +1,9 @@
 {
     "output": {
         "bass_enhancer#0": {
-            "amount": 4.0,
+            "amount": 10.0,
             "blend": 0.0,
-            "bypass": false,
+            "bypass": true,
             "floor": 20.0,
             "floor-active": false,
             "harmonics": 8.5,
@@ -52,7 +52,7 @@
                 },
                 "band11": {
                     "frequency": 250.0,
-                    "gain": 4.97,
+                    "gain": 0.52,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 4.36,
@@ -63,7 +63,7 @@
                 },
                 "band12": {
                     "frequency": 300.0,
-                    "gain": 4.14,
+                    "gain": -0.41,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 4.36,
@@ -411,7 +411,7 @@
                 },
                 "band11": {
                     "frequency": 250.0,
-                    "gain": 4.97,
+                    "gain": 0.52,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 4.36,
@@ -422,7 +422,7 @@
                 },
                 "band12": {
                     "frequency": 300.0,
-                    "gain": 4.14,
+                    "gain": -0.41,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 4.36,
